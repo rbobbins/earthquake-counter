@@ -127,9 +127,9 @@
 		5A6765FF1BD366D500DFDDBE /* EarthquakeCounterTests */ = {
 			isa = PBXGroup;
 			children = (
+				5A9315F91BD371AD004768FA /* Fakes */,
 				5A6766021BD366D500DFDDBE /* Info.plist */,
 				5A9315ED1BD3695E004768FA /* EarthquakeViewControllerSpec.swift */,
-				5A9315F71BD37046004768FA /* FakeEarthquakeService.swift */,
 			);
 			path = EarthquakeCounterTests;
 			sourceTree = "<group>";
@@ -141,6 +141,14 @@
 				5A67660D1BD366D500DFDDBE /* Info.plist */,
 			);
 			path = EarthquakeCounterUITests;
+			sourceTree = "<group>";
+		};
+		5A9315F91BD371AD004768FA /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				5A9315F71BD37046004768FA /* FakeEarthquakeService.swift */,
+			);
+			name = Fakes;
 			sourceTree = "<group>";
 		};
 		828B0DF549E89B621604E0B8 /* Pods */ = {
