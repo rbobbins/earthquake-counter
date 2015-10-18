@@ -16,6 +16,8 @@
 		5A9315EE1BD3695E004768FA /* EarthquakeViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9315ED1BD3695E004768FA /* EarthquakeViewControllerSpec.swift */; settings = {ASSET_TAGS = (); }; };
 		5A9315F31BD36AF3004768FA /* EarthquakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9315F11BD36AF3004768FA /* EarthquakeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		5A9315F41BD36AF3004768FA /* EarthquakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A9315F21BD36AF3004768FA /* EarthquakeViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		5A9315F61BD36FF0004768FA /* EarthquakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9315F51BD36FF0004768FA /* EarthquakeService.swift */; settings = {ASSET_TAGS = (); }; };
+		5A9315F81BD37046004768FA /* FakeEarthquakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9315F71BD37046004768FA /* FakeEarthquakeService.swift */; settings = {ASSET_TAGS = (); }; };
 		88CC51FC24110257ABFB30DD /* Pods_EarthquakeCounterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0974A61DAAFD1C1FE68430 /* Pods_EarthquakeCounterUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		5A9315ED1BD3695E004768FA /* EarthquakeViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthquakeViewControllerSpec.swift; sourceTree = "<group>"; };
 		5A9315F11BD36AF3004768FA /* EarthquakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthquakeViewController.swift; sourceTree = "<group>"; };
 		5A9315F21BD36AF3004768FA /* EarthquakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EarthquakeViewController.xib; sourceTree = "<group>"; };
+		5A9315F51BD36FF0004768FA /* EarthquakeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthquakeService.swift; sourceTree = "<group>"; };
+		5A9315F71BD37046004768FA /* FakeEarthquakeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeEarthquakeService.swift; sourceTree = "<group>"; };
 		81C910A968EA929A0B4A9EB2 /* Pods-EarthquakeCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthquakeCounterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarthquakeCounterTests/Pods-EarthquakeCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		84E9A7FAC85B3D69CDF4B3ED /* Pods-EarthquakeCounterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthquakeCounterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarthquakeCounterUITests/Pods-EarthquakeCounterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCC27AA058734E8D50C89DAA /* Pods-EarthquakeCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthquakeCounterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarthquakeCounterTests/Pods-EarthquakeCounterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				5A6765F71BD366D500DFDDBE /* Info.plist */,
 				5A9315F11BD36AF3004768FA /* EarthquakeViewController.swift */,
 				5A9315F21BD36AF3004768FA /* EarthquakeViewController.xib */,
+				5A9315F51BD36FF0004768FA /* EarthquakeService.swift */,
 			);
 			path = EarthquakeCounter;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				5A6766001BD366D500DFDDBE /* EarthquakeCounterTests.swift */,
 				5A6766021BD366D500DFDDBE /* Info.plist */,
 				5A9315ED1BD3695E004768FA /* EarthquakeViewControllerSpec.swift */,
+				5A9315F71BD37046004768FA /* FakeEarthquakeService.swift */,
 			);
 			path = EarthquakeCounterTests;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A6765EC1BD366D500DFDDBE /* AppDelegate.swift in Sources */,
+				5A9315F61BD36FF0004768FA /* EarthquakeService.swift in Sources */,
 				5A9315F31BD36AF3004768FA /* EarthquakeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +407,7 @@
 			files = (
 				5A9315EE1BD3695E004768FA /* EarthquakeViewControllerSpec.swift in Sources */,
 				5A6766011BD366D500DFDDBE /* EarthquakeCounterTests.swift in Sources */,
+				5A9315F81BD37046004768FA /* FakeEarthquakeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

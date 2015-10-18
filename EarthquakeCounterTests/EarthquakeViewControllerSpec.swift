@@ -5,7 +5,10 @@ import Nimble
 class EarthquakeViewControllerSpec: QuickSpec {
     override func spec() {
         var subject: EarthquakeViewController!
+        var earthquakeService: FakeEarthquakeService!
+
         beforeEach {
+            earthquakeService = FakeEarthquakeService()
             subject = EarthquakeViewController()
 
             //This assertertion triggers the view controller to load its view.
@@ -14,6 +17,10 @@ class EarthquakeViewControllerSpec: QuickSpec {
 
         it("should have welcome text") {
             expect(subject.titleLabel.text).to(equal("Welcome"))
+        }
+
+        it("should immediately make a request for a list of earthquakes") {
+            expect(earthquakeService.getSanRamonEarthquakes_wasCalled).to(beTrue())
         }
     }
 }
