@@ -5,13 +5,13 @@ import PromiseKit
 class FakeHTTPClient: HTTPClient {
     //MARK: Track methods that were called
     var get_wasCalled = false
-    var get_wasCalled_withURL: NSURL?
+    var get_wasCalled_withURL: String?
     var fulfillLastRequest: (NSDictionary -> Void)?
     var rejectLastRequest: (NSError -> Void)?
 
 
     //MARK: HTTPClient
-    func get(url: NSURL) -> JSONPromise {
+    func get(url: String) -> JSONPromise {
         get_wasCalled = true
         get_wasCalled_withURL = url
 
