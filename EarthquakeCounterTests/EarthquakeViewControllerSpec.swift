@@ -9,7 +9,8 @@ class EarthquakeViewControllerSpec: QuickSpec {
 
         beforeEach {
             earthquakeService = FakeEarthquakeService()
-            subject = EarthquakeViewController()
+
+            subject = EarthquakeViewController(earthquakeService: earthquakeService)
 
             //This assertertion triggers the view controller to load its view.
             expect(subject.view).notTo(beNil())
