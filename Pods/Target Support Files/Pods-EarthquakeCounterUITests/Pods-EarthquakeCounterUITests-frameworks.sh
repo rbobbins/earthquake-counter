@@ -49,9 +49,13 @@ code_sign() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Nimble.framework'
+  install_framework 'OMGHTTPURLRQ.framework'
+  install_framework 'PromiseKit.framework'
   install_framework 'Quick.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Nimble.framework'
+  install_framework 'OMGHTTPURLRQ.framework'
+  install_framework 'PromiseKit.framework'
   install_framework 'Quick.framework'
 fi

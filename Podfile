@@ -6,6 +6,8 @@ def testing_pods
     pod 'Nimble', '2.0.0-rc.3'
 end
 
+
+pod 'PromiseKit'
 target 'EarthquakeCounterTests' do
     testing_pods
 end

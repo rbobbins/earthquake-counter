@@ -3,6 +3,12 @@ public protocol EarthquakeService {
 }
 
 class RealEarthquakeService: EarthquakeService {
+    let httpClient: HTTPClient
+
+    init(httpClient: HTTPClient = RealHTTPClient()) {
+        self.httpClient = httpClient
+    }
+
     func getSanRamonEarthquakes() {
         //no-op, for now
     }

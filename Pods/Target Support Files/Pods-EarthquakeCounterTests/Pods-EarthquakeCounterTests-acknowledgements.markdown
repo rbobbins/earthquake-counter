@@ -206,6 +206,14 @@ Apache License
    limitations under the License.
 
 
+## OMGHTTPURLRQ
+
+See README.markdown for full license text.
+
+## PromiseKit
+
+@see README
+
 ## Quick
 
 Apache License
