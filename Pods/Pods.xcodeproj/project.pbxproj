@@ -1,0 +1,1480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009A7DABBD60A45601272E7E /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F8BA42112EB943B101B77F /* BeNil.swift */; };
+		020F0AE96D556633C8A6E826 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C900B2FAFEF630D7CEBFF5 /* ExampleMetadata.swift */; };
+		02D484927B1D35E4B66DBEFB /* Pods-EarthquakeCounterUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B9980369C3F0C513166E4B1 /* Pods-EarthquakeCounterUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04EB3D2177CB91A9A219DEDD /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE880D89E698810EFB5DAD /* AsyncMatcherWrapper.swift */; };
+		09E90FFC95B38C66DE263FA9 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A93BF499F28EF0E466CE13C /* Expectation.swift */; };
+		0AB599E8F71566A2D6ED3E75 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A65965B0A58191EECC11B /* BeLogical.swift */; };
+		0BC77657DF3E2C6CB4903C8B /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE75FE861411E4626D0CEC /* DSL.m */; };
+		0C149B3482320211CDA57330 /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3125B48862969BC7D66F48 /* DSL+Wait.swift */; };
+		0E051B41DA7696F94496D714 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67DBD61AB13660EC04532C4 /* Filter.swift */; };
+		0FF1B258771B99D9BD3AFB9B /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD14B8E2FAA74661910E18 /* Match.swift */; };
+		10E240B758565DA81B1D95E7 /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F83274A76141589B95D871 /* QCKDSL.m */; };
+		136FB3EF3AA1AF248C0F9972 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB2974D3576E635B7AC03B /* BeCloseTo.swift */; };
+		15093129AC69D5E2A22AD6D0 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78E75DCAAAB114562F88535 /* Equal.swift */; };
+		15545C79916E4BCC2AF37F65 /* World+DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = EF771AD4D0858BF900406BC5 /* World+DSL.h */; };
+		166E7517E3133CC2BB60CE47 /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3125B48862969BC7D66F48 /* DSL+Wait.swift */; };
+		16821297C394DAA46665515E /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE66F02E476E5C56B7B777 /* FailureMessage.swift */; };
+		16CC8B5C85294D7CF46D4D82 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3941108E5F3A6CDB4D6E65A4 /* Poll.swift */; };
+		17DB93E8B6846983C5EB75E8 /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7337A9D6F78AEFD89E56967E /* QuickSpec.m */; };
+		186F9D4B309D0C57E6482366 /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F83274A76141589B95D871 /* QCKDSL.m */; };
+		199B6900E0A78F5B2B378CDC /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F75DF2F7B36FAA93D306A /* DSL.swift */; };
+		1C62C2A9C68FFC5B9C8EAF04 /* Pods-EarthquakeCounterTests-Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F08B85E65502C3C9B9BDE3 /* Pods-EarthquakeCounterTests-Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DD06664F00DA8034D40268E /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D1D1C7E04DD4DCC622AF04 /* Stringers.swift */; };
+		20EC619996E3770EC3C2ADFF /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8721F83D09599FC44EECA /* AssertionRecorder.swift */; };
+		215E42A562875E55292FA8C2 /* Pods-EarthquakeCounterTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EBDF5452C08706D602D26 /* Pods-EarthquakeCounterTests-dummy.m */; };
+		23718DB08AEDCC08A8FB71A0 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A65965B0A58191EECC11B /* BeLogical.swift */; };
+		26E26D826EB9BBC35886CE12 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10622E76B8C8662A5B483E73 /* BeginWith.swift */; };
+		28841300EAC87832CB4F4D9B /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46DA1CD3B4B9E0B35E666B7 /* BeEmpty.swift */; };
+		289DA4CB5441352F8608AF7F /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDF6EAAE43C6AD77374D7D7 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CB5E9171008AEBC10E10F82 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0132C4B6AF119C337A86B7D /* SourceLocation.swift */; };
+		2D4FDA47D4BB3151D4EDD084 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0586850F53E156170249B4 /* SuiteHooks.swift */; };
+		2E7CE6AEC6964C2FF4435632 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11769D1A68E34AFFE1654EF0 /* BeGreaterThanOrEqualTo.swift */; };
+		2F4F79A496E4E465B6A86FAD /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C900B2FAFEF630D7CEBFF5 /* ExampleMetadata.swift */; };
+		32F00BF6FBD3CF7602F3FD1F /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CFB43AC966F15726E4140 /* BeLessThan.swift */; };
+		347030AD077AC60EC7AB8FD4 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E27953549D4AB7A93A8242B /* Callsite.swift */; };
+		357C4161244A5B9BC1D5BA7F /* NSString+QCKSelectorName.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F66CD04C681D0D9AC93D061 /* NSString+QCKSelectorName.h */; };
+		39109FA7C9674BF507A7050C /* Pods-EarthquakeCounterUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 518B536817D474CC30DBD093 /* Pods-EarthquakeCounterUITests-dummy.m */; };
+		3A2BC9BA2ED839B7EE408A17 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BD96AF9E8BAE9DD5C0769 /* AssertionDispatcher.swift */; };
+		3A99E68740228FA5B44BD629 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E27953549D4AB7A93A8242B /* Callsite.swift */; };
+		3BCC9891B9D446B19B4129BB /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDF6EAAE43C6AD77374D7D7 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F1C19F2D3496C55AB120044 /* Pods-EarthquakeCounterTests-Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA1AAB509B4969271C991BD /* Pods-EarthquakeCounterTests-Quick-dummy.m */; };
+		3F8C847E438E1274628849A4 /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ADC22E8928D4EF268C81EF /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4101A565C7708D34B526B14D /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = C1BDCD5EF7A162BE7D915903 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41856D9BACC357C67638F5B8 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11D464E58F49E627FEC14E5 /* ThrowError.swift */; };
+		4199EF919FF209A8FE705232 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2EAB298D18BD52B00F5A4 /* NMBExceptionCapture.m */; };
+		428218193AD3E59F93880F0E /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0841C43BC4191B72EAAC0D /* ExampleHooks.swift */; };
+		42D64DDF5E1106FCB048E59C /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369A5BA90116761F0FC1774 /* World+DSL.swift */; };
+		4616E016A533D43D5D16A621 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67DBD61AB13660EC04532C4 /* Filter.swift */; };
+		484A3117B608F6B351825792 /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = E26FF3BAA62732FDF39739ED /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49E238C1FD0DAE8AD205AD20 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CDC1EA4DF3E42B8B166FED /* World.swift */; };
+		4D7BCC3D065E6A0B76C7E8A8 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CFB43AC966F15726E4140 /* BeLessThan.swift */; };
+		4EDE32EBA430A04C8421CB86 /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = 060F93DF35EC682B97747A3E /* NSString+QCKSelectorName.m */; };
+		4EF1D3AEF5C20F48A022528C /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30B5CF8366F4EF2F852D5B /* MatcherProtocols.swift */; };
+		4F60DD44ECF054219ED07977 /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FF097BCAB13123335992D25 /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F655ABC99FAEEE12A43EB59 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D94E7CFF4755F7DE28C4D /* BeGreaterThan.swift */; };
+		5280824E349170D6EE7D81A2 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0841C43BC4191B72EAAC0D /* ExampleHooks.swift */; };
+		52A7EE323C6DC871B02EB3EC /* Pods-EarthquakeCounterTests-Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C06530043FE0B36188A85D1C /* Pods-EarthquakeCounterTests-Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52E3DDB5E9060C3B7866399C /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ADC22E8928D4EF268C81EF /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57EE2F4C1670EACA921BECA2 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FE8148E4A758758EFE6E30 /* EndWith.swift */; };
+		5865631D9FDDD845B21623F5 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C3F49E9D2CA93A11A2244 /* AllPass.swift */; };
+		5A181DD1BE4461374C1C9AFA /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 9032A3C610C442954F3CB99B /* World.h */; };
+		5A43D9AAEBA8183107233CBD /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970B5219A1B1AD0EB0BA2DA /* BeAnInstanceOf.swift */; };
+		5C2D9E5CD34FF81A61ECECEF /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B4DD13F0DA43C2D1194C3 /* NimbleXCTestHandler.swift */; };
+		5E46D8F128F4F5C088183A09 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CBBF067933055446961D5B /* BeAKindOf.swift */; };
+		631D134B76717FAA7E325781 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1C4B23B27BB6815BBEF56 /* Example.swift */; };
+		646EBC1BB284994C3F70D11F /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BD96AF9E8BAE9DD5C0769 /* AssertionDispatcher.swift */; };
+		6A7E59C70D7B00C01A3DFD8E /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2EAB298D18BD52B00F5A4 /* NMBExceptionCapture.m */; };
+		6AA4FAA80519E9933F0E484E /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE66F02E476E5C56B7B777 /* FailureMessage.swift */; };
+		6CB1184CB1D18B32321C1DE1 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 8044B613030928503EC01877 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E17EA4868F20CBDBF92C67B /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7337A9D6F78AEFD89E56967E /* QuickSpec.m */; };
+		725404C9B591394DD72E1BDA /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB924D5EB81B0EA6F0ABC373 /* Expression.swift */; };
+		73C79E2D1B269269BB684CF3 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11D464E58F49E627FEC14E5 /* ThrowError.swift */; };
+		75151E672AC3FB5542D6BEB4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AB0B9A270E91477822CBED /* XCTest.framework */; };
+		79317371F75F27E4E924B3DD /* Pods-EarthquakeCounterUITests-Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD570CA6B0371DB55B1FA54 /* Pods-EarthquakeCounterUITests-Nimble-dummy.m */; };
+		79C57A9C2FD90D171735F7BB /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FE8148E4A758758EFE6E30 /* EndWith.swift */; };
+		7B8BBCC27889BAE8E41886C9 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D369A5BA90116761F0FC1774 /* World+DSL.swift */; };
+		7D05409B5803229061B3183D /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970B5219A1B1AD0EB0BA2DA /* BeAnInstanceOf.swift */; };
+		7D45B6CDF31883B6BDE48028 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = C1BDCD5EF7A162BE7D915903 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D63D3A4BD60CB1DA7D5C861 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8721F83D09599FC44EECA /* AssertionRecorder.swift */; };
+		809FE470A119CE871D52DE93 /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FF097BCAB13123335992D25 /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		810CCCD6BC5545ED7A963B9E /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121734A368FEC912BA7E81C /* BeLessThanOrEqual.swift */; };
+		86E9860C03AC737AAF6A13A5 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B6B020394891531E8C9D /* MatcherFunc.swift */; };
+		870DE74B9F8E239E73FA9B53 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1C4B23B27BB6815BBEF56 /* Example.swift */; };
+		876B8D2E4766CAADEC78E9CE /* Pods-EarthquakeCounterUITests-Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2311129A3AF9064518D3C861 /* Pods-EarthquakeCounterUITests-Quick-dummy.m */; };
+		8AB7FEB13F67F477BFDFD285 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AB0B9A270E91477822CBED /* XCTest.framework */; };
+		8C15622DAF9B27E9D78B562D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC15A7011C66A6BD832B7FF /* Foundation.framework */; };
+		922E9AFD90A569E5CDE37EB3 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655A142EC5642C5F61FE3A5 /* Configuration.swift */; };
+		92BB23A549CA9ADACA2C8A38 /* NSString+QCKSelectorName.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F66CD04C681D0D9AC93D061 /* NSString+QCKSelectorName.h */; };
+		94734D1A0EA54738DBD3A974 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0132C4B6AF119C337A86B7D /* SourceLocation.swift */; };
+		959BAE8E45DF101C0C1F3F96 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F75DF2F7B36FAA93D306A /* DSL.swift */; };
+		96B861D6866FCE4A9E6EC756 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87B4EA14CACB6700FEF4C5 /* Contain.swift */; };
+		9A134AFBD027C73A2D63F45B /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46DA1CD3B4B9E0B35E666B7 /* BeEmpty.swift */; };
+		9A548638412522A3210F4EF7 /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 3832463884185C1380375665 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BAB1CBB3E7F9760D6289FBB /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70128053688E587FC84D144 /* Closures.swift */; };
+		9FD6015919D00B9D51D561CB /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC06BFA3E5693EB0B0D20C /* BeIdenticalTo.swift */; };
+		A2EC3EB98A40DB544FFDDC9D /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7B892F3CDA9CE70ADE9B4 /* ExampleGroup.swift */; };
+		A30053C88A8199AFB85A290A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC15A7011C66A6BD832B7FF /* Foundation.framework */; };
+		A76D0FC4D636D5BA9486C321 /* World+DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = EF771AD4D0858BF900406BC5 /* World+DSL.h */; };
+		A860616D68038AAC18910340 /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121734A368FEC912BA7E81C /* BeLessThanOrEqual.swift */; };
+		A90ACA3D899E49537BB6773B /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C253FEF48DA7FEEC46846 /* Functional.swift */; };
+		A94355FD237F80A65686018D /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A93BF499F28EF0E466CE13C /* Expectation.swift */; };
+		AB331A1B9CDCAC4DD07D2B5A /* ObjCExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892524473267B3E432244A32 /* ObjCExpectation.swift */; };
+		AB7719BC784A4F3237566026 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F82A77B8AE02FAA3EE535 /* AdapterProtocols.swift */; };
+		ACBE646EEE8022C3644184E5 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB2974D3576E635B7AC03B /* BeCloseTo.swift */; };
+		ADC21940BBB8E653F0ABFDF8 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D1D1C7E04DD4DCC622AF04 /* Stringers.swift */; };
+		AE9C9D801CEFCC97FFCBB45D /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = E26FF3BAA62732FDF39739ED /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B011FDCFA1CF5AD8941BB69A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC15A7011C66A6BD832B7FF /* Foundation.framework */; };
+		B15ADC2D6C70FB7E32E747C2 /* ObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B2EF6D263FEF01D4B81B59 /* ObjCMatcher.swift */; };
+		B17DE9CB8D7CB4AB24019FC5 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D94E7CFF4755F7DE28C4D /* BeGreaterThan.swift */; };
+		B2B70D1EA510835A41438B22 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E136A35AF46F698DBB79B /* DSL.swift */; };
+		B3C95FB91EDA21308BA17342 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CDC1EA4DF3E42B8B166FED /* World.swift */; };
+		B74F9F1B402A57B6F9A99023 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC15A7011C66A6BD832B7FF /* Foundation.framework */; };
+		BC668EE782B8E446567B1391 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C30B5CF8366F4EF2F852D5B /* MatcherProtocols.swift */; };
+		BC7F49A09073DD6EC50225AA /* ObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B2EF6D263FEF01D4B81B59 /* ObjCMatcher.swift */; };
+		BC98BE93A20EB041E30A27C1 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C253FEF48DA7FEEC46846 /* Functional.swift */; };
+		BD83F45BF592F46111F05444 /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 9032A3C610C442954F3CB99B /* World.h */; };
+		BDC20B1576AAA3D9EF769DB7 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643621AFEC4865E24B74942 /* RaisesException.swift */; };
+		BE14EE1955944C9764EAA383 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 8044B613030928503EC01877 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0ADDA0530AB93C3802EDFD1 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B6B020394891531E8C9D /* MatcherFunc.swift */; };
+		C31F3323ECF78D79F37ABE76 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655A142EC5642C5F61FE3A5 /* Configuration.swift */; };
+		C338CC7EC127E303452206E9 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F8BA42112EB943B101B77F /* BeNil.swift */; };
+		C49812CE26CEE141B7048A23 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F87B4EA14CACB6700FEF4C5 /* Contain.swift */; };
+		C8EAE3FACA3ABBD5BB6E63F6 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C3F49E9D2CA93A11A2244 /* AllPass.swift */; };
+		C92679C644DC02786BBB1B97 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3941108E5F3A6CDB4D6E65A4 /* Poll.swift */; };
+		CA5AFC39555ECD2509859BA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC15A7011C66A6BD832B7FF /* Foundation.framework */; };
+		CB1D467686CEC8761F2F127F /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 3832463884185C1380375665 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD007D116776AEAE4FC3E623 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD14B8E2FAA74661910E18 /* Match.swift */; };
+		CD38C5D6A17640F184EABA5F /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B0209AD9A52D9AF20DBB24 /* QuickConfiguration.m */; };
+		CE5E18E16B47E241C36BDDA0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AB0B9A270E91477822CBED /* XCTest.framework */; };
+		D05F4F936C9155A7AB1F85E1 /* Pods-EarthquakeCounterUITests-Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 168FFB8BC32CA15FD5CBBEDD /* Pods-EarthquakeCounterUITests-Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D304219FF6BECF37EFC64E9F /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E136A35AF46F698DBB79B /* DSL.swift */; };
+		D67874E024B7E7B5CE31E154 /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE880D89E698810EFB5DAD /* AsyncMatcherWrapper.swift */; };
+		D83C7CF588C71FA491B936C8 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11769D1A68E34AFFE1654EF0 /* BeGreaterThanOrEqualTo.swift */; };
+		D8BEFDE4FA9130C43AA16ACF /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70128053688E587FC84D144 /* Closures.swift */; };
+		DBBDA8A9CE12B20565458B06 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78E75DCAAAB114562F88535 /* Equal.swift */; };
+		DF3C815596E7DFD117395034 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC15A7011C66A6BD832B7FF /* Foundation.framework */; };
+		E41FCD6944D6FED218FD7A96 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10622E76B8C8662A5B483E73 /* BeginWith.swift */; };
+		E495B653552DD1E9CA426B8B /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B4DD13F0DA43C2D1194C3 /* NimbleXCTestHandler.swift */; };
+		E55B0B6177D6E7102F768289 /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = 060F93DF35EC682B97747A3E /* NSString+QCKSelectorName.m */; };
+		E5C5C5AC756DCDDCC868B1BA /* Pods-EarthquakeCounterTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CC1A53CE6768DED1FFEE6EF /* Pods-EarthquakeCounterTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B960B85B57296970E2A152 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC06BFA3E5693EB0B0D20C /* BeIdenticalTo.swift */; };
+		EA653465B7049C552040A63E /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B0209AD9A52D9AF20DBB24 /* QuickConfiguration.m */; };
+		EC1BD41D6FE7681AA1334BF2 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CBBF067933055446961D5B /* BeAKindOf.swift */; };
+		EC1CB7215E96091377F676D8 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE75FE861411E4626D0CEC /* DSL.m */; };
+		EEE9D751BA826E6782E9EFA3 /* Pods-EarthquakeCounterUITests-Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC362E163B8938F17B7F008 /* Pods-EarthquakeCounterUITests-Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF4FFE0769D8B90FBDAFB1B3 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643621AFEC4865E24B74942 /* RaisesException.swift */; };
+		EFCC4F8BC462639F05DA03E8 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0586850F53E156170249B4 /* SuiteHooks.swift */; };
+		F09A1648407E2182D2794CC9 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F82A77B8AE02FAA3EE535 /* AdapterProtocols.swift */; };
+		F39FED0082986E326BB67EB3 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7B892F3CDA9CE70ADE9B4 /* ExampleGroup.swift */; };
+		FB3A5395CC48A5955273FCEF /* Pods-EarthquakeCounterTests-Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A70CE9836DB51D5B6FDF2895 /* Pods-EarthquakeCounterTests-Nimble-dummy.m */; };
+		FBEDA920F9663C14140F1454 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AB0B9A270E91477822CBED /* XCTest.framework */; };
+		FD35EA2F40FE47F7C8D49C47 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB924D5EB81B0EA6F0ABC373 /* Expression.swift */; };
+		FD8FC53EAFB15258D2696FAF /* ObjCExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892524473267B3E432244A32 /* ObjCExpectation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		854572DB12CF9EEB1A0E44D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28BE783BC1935A27BA6F8106 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADDB4FB067DDA5335E5A56EF;
+			remoteInfo = "Pods-EarthquakeCounterTests-Nimble";
+		};
+		C29CF88839E47C88E09024BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28BE783BC1935A27BA6F8106 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E26166DD3E533EDA81D3DAF9;
+			remoteInfo = "Pods-EarthquakeCounterUITests-Quick";
+		};
+		C9ADC04807CA7B4C03EA2926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28BE783BC1935A27BA6F8106 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08759B75EF47BAA7E2E85675;
+			remoteInfo = "Pods-EarthquakeCounterUITests-Nimble";
+		};
+		DC4CE4D87C0FE224BBC51AA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28BE783BC1935A27BA6F8106 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67FDD46D8EADA98100887DEA;
+			remoteInfo = "Pods-EarthquakeCounterTests-Quick";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0067E6DA1DB4DC45D1424E74 /* Pods-EarthquakeCounterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EarthquakeCounterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		060F93DF35EC682B97747A3E /* NSString+QCKSelectorName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+QCKSelectorName.m"; path = "Quick/NSString+QCKSelectorName.m"; sourceTree = "<group>"; };
+		0936F43A738C6B6D991BF1EE /* Pods-EarthquakeCounterUITests-Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-EarthquakeCounterUITests-Quick.modulemap"; path = "../Pods-EarthquakeCounterUITests-Quick/Pods-EarthquakeCounterUITests-Quick.modulemap"; sourceTree = "<group>"; };
+		0B18320633CDE30EFC785194 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C30B5CF8366F4EF2F852D5B /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
+		0DC362E163B8938F17B7F008 /* Pods-EarthquakeCounterUITests-Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-EarthquakeCounterUITests-Quick-umbrella.h"; path = "../Pods-EarthquakeCounterUITests-Quick/Pods-EarthquakeCounterUITests-Quick-umbrella.h"; sourceTree = "<group>"; };
+		10622E76B8C8662A5B483E73 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
+		11769D1A68E34AFFE1654EF0 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
+		146A841C7DFECCDDF91EFEF2 /* Pods-EarthquakeCounterTests-Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EarthquakeCounterTests-Nimble.xcconfig"; sourceTree = "<group>"; };
+		147EDB83EA9AF2E6A57CAB2A /* Pods-EarthquakeCounterUITests-Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthquakeCounterUITests-Quick.xcconfig"; path = "../Pods-EarthquakeCounterUITests-Quick/Pods-EarthquakeCounterUITests-Quick.xcconfig"; sourceTree = "<group>"; };
+		15E5F2F8303A224B5716A3D8 /* Pods-EarthquakeCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EarthquakeCounterTests.release.xcconfig"; sourceTree = "<group>"; };
+		168FFB8BC32CA15FD5CBBEDD /* Pods-EarthquakeCounterUITests-Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-EarthquakeCounterUITests-Nimble-umbrella.h"; path = "../Pods-EarthquakeCounterUITests-Nimble/Pods-EarthquakeCounterUITests-Nimble-umbrella.h"; sourceTree = "<group>"; };
+		194009DBD6F61B4FB620AFE1 /* Pods-EarthquakeCounterUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EarthquakeCounterUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A6A65965B0A58191EECC11B /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
+		1A95327B2C92C6A75239A73D /* Pods-EarthquakeCounterTests-Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EarthquakeCounterTests-Quick.xcconfig"; sourceTree = "<group>"; };
+		2311129A3AF9064518D3C861 /* Pods-EarthquakeCounterUITests-Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-EarthquakeCounterUITests-Quick-dummy.m"; path = "../Pods-EarthquakeCounterUITests-Quick/Pods-EarthquakeCounterUITests-Quick-dummy.m"; sourceTree = "<group>"; };
+		24CDC1EA4DF3E42B8B166FED /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
+		26117D6AB370E3FCF82E6448 /* Pods_EarthquakeCounterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarthquakeCounterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2970B5219A1B1AD0EB0BA2DA /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
+		2A0A0DF55BE0377867522FAA /* Pods-EarthquakeCounterTests-Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EarthquakeCounterTests-Nimble-prefix.pch"; sourceTree = "<group>"; };
+		2A885B545B0920D68087E5BC /* Pods-EarthquakeCounterUITests-Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-EarthquakeCounterUITests-Nimble-prefix.pch"; path = "../Pods-EarthquakeCounterUITests-Nimble/Pods-EarthquakeCounterUITests-Nimble-prefix.pch"; sourceTree = "<group>"; };
+		2DFE75FE861411E4626D0CEC /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Nimble/objc/DSL.m; sourceTree = "<group>"; };
+		300C711AB091B38E4216D52A /* Pods-EarthquakeCounterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EarthquakeCounterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		37F08B85E65502C3C9B9BDE3 /* Pods-EarthquakeCounterTests-Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EarthquakeCounterTests-Nimble-umbrella.h"; sourceTree = "<group>"; };
+		3832463884185C1380375665 /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Quick/Quick.h; sourceTree = "<group>"; };
+		391BD96AF9E8BAE9DD5C0769 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
+		3941108E5F3A6CDB4D6E65A4 /* Poll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poll.swift; path = Nimble/Utils/Poll.swift; sourceTree = "<group>"; };
+		415C253FEF48DA7FEEC46846 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
+		4643621AFEC4865E24B74942 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
+		484F75DF2F7B36FAA93D306A /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Nimble/DSL.swift; sourceTree = "<group>"; };
+		49073A2813EA62D5B367CD40 /* Pods-EarthquakeCounterTests-Quick-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EarthquakeCounterTests-Quick-Private.xcconfig"; sourceTree = "<group>"; };
+		4C8EBDF5452C08706D602D26 /* Pods-EarthquakeCounterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EarthquakeCounterTests-dummy.m"; sourceTree = "<group>"; };
+		4CDF6EAAE43C6AD77374D7D7 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Nimble/Nimble.h; sourceTree = "<group>"; };
+		518B536817D474CC30DBD093 /* Pods-EarthquakeCounterUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EarthquakeCounterUITests-dummy.m"; sourceTree = "<group>"; };
+		55D1D1C7E04DD4DCC622AF04 /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
+		56C8721F83D09599FC44EECA /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
+		58AB0B9A270E91477822CBED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		59EC4E27E5324C676878EC77 /* Pods-EarthquakeCounterUITests-Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-EarthquakeCounterUITests-Nimble.modulemap"; path = "../Pods-EarthquakeCounterUITests-Nimble/Pods-EarthquakeCounterUITests-Nimble.modulemap"; sourceTree = "<group>"; };
+		5A1ABA5AD1A1DD4F36C3CE0F /* Pods-EarthquakeCounterUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EarthquakeCounterUITests-resources.sh"; sourceTree = "<group>"; };
+		5C320B5CB65C761F571C2C58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E1C3F49E9D2CA93A11A2244 /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
+		5F4E31C5566B22CDDC46414E /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DB2974D3576E635B7AC03B /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
+		624CFB43AC966F15726E4140 /* BeLessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThan.swift; path = Nimble/Matchers/BeLessThan.swift; sourceTree = "<group>"; };
+		6A93BF499F28EF0E466CE13C /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Nimble/Expectation.swift; sourceTree = "<group>"; };
+		6AA8A969A4E3F76C19D044AB /* Pods-EarthquakeCounterTests-Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EarthquakeCounterTests-Quick-prefix.pch"; sourceTree = "<group>"; };
+		6B4681C6E05CA3013F71584A /* Pods-EarthquakeCounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EarthquakeCounterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6CA1DF1C714A3EB6D5610A65 /* Pods-EarthquakeCounterUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EarthquakeCounterUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6CC1A53CE6768DED1FFEE6EF /* Pods-EarthquakeCounterTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EarthquakeCounterTests-umbrella.h"; sourceTree = "<group>"; };
+		6E0841C43BC4191B72EAAC0D /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
+		6E27953549D4AB7A93A8242B /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Quick/Callsite.swift; sourceTree = "<group>"; };
+		6F25505BA8F15FD387A81B2C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6F66CD04C681D0D9AC93D061 /* NSString+QCKSelectorName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+QCKSelectorName.h"; path = "Quick/NSString+QCKSelectorName.h"; sourceTree = "<group>"; };
+		71E51EE311378666C29F552F /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7337A9D6F78AEFD89E56967E /* QuickSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpec.m; path = Quick/QuickSpec.m; sourceTree = "<group>"; };
+		7361360D424AAF9491763D1F /* Pods-EarthquakeCounterUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EarthquakeCounterUITests-frameworks.sh"; sourceTree = "<group>"; };
+		77D64AC707F54051373CE779 /* Pods-EarthquakeCounterUITests-Quick-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthquakeCounterUITests-Quick-Private.xcconfig"; path = "../Pods-EarthquakeCounterUITests-Quick/Pods-EarthquakeCounterUITests-Quick-Private.xcconfig"; sourceTree = "<group>"; };
+		7B9980369C3F0C513166E4B1 /* Pods-EarthquakeCounterUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EarthquakeCounterUITests-umbrella.h"; sourceTree = "<group>"; };
+		8044B613030928503EC01877 /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Nimble/objc/NMBExceptionCapture.h; sourceTree = "<group>"; };
+		8146E52AF743B24737F966BD /* Pods-EarthquakeCounterTests-Nimble-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EarthquakeCounterTests-Nimble-Private.xcconfig"; sourceTree = "<group>"; };
+		81ADB6E67489450190BE24F5 /* Pods-EarthquakeCounterTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EarthquakeCounterTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86F1C4B23B27BB6815BBEF56 /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Quick/Example.swift; sourceTree = "<group>"; };
+		88C987905AF7CF4BE31190C7 /* Pods-EarthquakeCounterTests-Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EarthquakeCounterTests-Quick.modulemap"; sourceTree = "<group>"; };
+		88DDEDD46CFA3B72387E5C88 /* Pods-EarthquakeCounterUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EarthquakeCounterUITests.modulemap"; sourceTree = "<group>"; };
+		892524473267B3E432244A32 /* ObjCExpectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCExpectation.swift; path = Nimble/ObjCExpectation.swift; sourceTree = "<group>"; };
+		8A542FFF977695F35C380BAE /* Pods-EarthquakeCounterTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EarthquakeCounterTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8B0586850F53E156170249B4 /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
+		8BEE880D89E698810EFB5DAD /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncMatcherWrapper.swift; path = Nimble/Wrappers/AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
+		8D51B6B020394891531E8C9D /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
+		8FF097BCAB13123335992D25 /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Nimble/objc/DSL.h; sourceTree = "<group>"; };
+		9032A3C610C442954F3CB99B /* World.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = World.h; path = Quick/World.h; sourceTree = "<group>"; };
+		93CBBF067933055446961D5B /* BeAKindOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAKindOf.swift; path = Nimble/Matchers/BeAKindOf.swift; sourceTree = "<group>"; };
+		961B4DD13F0DA43C2D1194C3 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
+		9D6D94E7CFF4755F7DE28C4D /* BeGreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThan.swift; path = Nimble/Matchers/BeGreaterThan.swift; sourceTree = "<group>"; };
+		9DEAFC0BA789E8ABBF56128C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E3D0C9BF709CC1C6338CC8E /* Pods_EarthquakeCounterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarthquakeCounterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F87B4EA14CACB6700FEF4C5 /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
+		A121734A368FEC912BA7E81C /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
+		A4D7B892F3CDA9CE70ADE9B4 /* ExampleGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleGroup.swift; path = Quick/ExampleGroup.swift; sourceTree = "<group>"; };
+		A594A4D4D43BA67CA5933CA1 /* Pods-EarthquakeCounterUITests-Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthquakeCounterUITests-Nimble.xcconfig"; path = "../Pods-EarthquakeCounterUITests-Nimble/Pods-EarthquakeCounterUITests-Nimble.xcconfig"; sourceTree = "<group>"; };
+		A655A142EC5642C5F61FE3A5 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Quick/Configuration/Configuration.swift; sourceTree = "<group>"; };
+		A6ADC22E8928D4EF268C81EF /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Quick/QuickSpec.h; sourceTree = "<group>"; };
+		A70128053688E587FC84D144 /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
+		A70CE9836DB51D5B6FDF2895 /* Pods-EarthquakeCounterTests-Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EarthquakeCounterTests-Nimble-dummy.m"; sourceTree = "<group>"; };
+		AB1592B761DD7011ED49140E /* Pods-EarthquakeCounterTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EarthquakeCounterTests.modulemap"; sourceTree = "<group>"; };
+		AB924D5EB81B0EA6F0ABC373 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Nimble/Expression.swift; sourceTree = "<group>"; };
+		AD88D49ECB01091EC33A3CBF /* Pods-EarthquakeCounterUITests-Nimble-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthquakeCounterUITests-Nimble-Private.xcconfig"; path = "../Pods-EarthquakeCounterUITests-Nimble/Pods-EarthquakeCounterUITests-Nimble-Private.xcconfig"; sourceTree = "<group>"; };
+		B2E2EAB298D18BD52B00F5A4 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Nimble/objc/NMBExceptionCapture.m; sourceTree = "<group>"; };
+		B3CF572656CC684CA9AB7F27 /* Pods-EarthquakeCounterTests-Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EarthquakeCounterTests-Nimble.modulemap"; sourceTree = "<group>"; };
+		B42A565378F8BD1F930AFD1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46DA1CD3B4B9E0B35E666B7 /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
+		B4ADD6CA48B18178B01A5554 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-EarthquakeCounterUITests-Nimble/Info.plist"; sourceTree = "<group>"; };
+		B70F82A77B8AE02FAA3EE535 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
+		BCE8F121EFFB069E847E535B /* Pods-EarthquakeCounterTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EarthquakeCounterTests-frameworks.sh"; sourceTree = "<group>"; };
+		BDA1AAB509B4969271C991BD /* Pods-EarthquakeCounterTests-Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EarthquakeCounterTests-Quick-dummy.m"; sourceTree = "<group>"; };
+		BF8E136A35AF46F698DBB79B /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Quick/DSL/DSL.swift; sourceTree = "<group>"; };
+		C06530043FE0B36188A85D1C /* Pods-EarthquakeCounterTests-Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EarthquakeCounterTests-Quick-umbrella.h"; sourceTree = "<group>"; };
+		C0F5F6B9985D93D08CBB1D0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-EarthquakeCounterUITests-Quick/Info.plist"; sourceTree = "<group>"; };
+		C1BDCD5EF7A162BE7D915903 /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Quick/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
+		C3FE8148E4A758758EFE6E30 /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
+		C78E75DCAAAB114562F88535 /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
+		CFC15A7011C66A6BD832B7FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D369A5BA90116761F0FC1774 /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
+		D3B2EF6D263FEF01D4B81B59 /* ObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCMatcher.swift; path = Nimble/Wrappers/ObjCMatcher.swift; sourceTree = "<group>"; };
+		D3F8BA42112EB943B101B77F /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
+		DBD570CA6B0371DB55B1FA54 /* Pods-EarthquakeCounterUITests-Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-EarthquakeCounterUITests-Nimble-dummy.m"; path = "../Pods-EarthquakeCounterUITests-Nimble/Pods-EarthquakeCounterUITests-Nimble-dummy.m"; sourceTree = "<group>"; };
+		DD3125B48862969BC7D66F48 /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
+		DDFC06BFA3E5693EB0B0D20C /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
+		E03B39E40C008221AE7A3601 /* Pods-EarthquakeCounterTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EarthquakeCounterTests-resources.sh"; sourceTree = "<group>"; };
+		E14999BDCDCE8BC5BE11F649 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26FF3BAA62732FDF39739ED /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Quick/DSL/QCKDSL.h; sourceTree = "<group>"; };
+		E42B73A38DF2BE18844CA22E /* Pods-EarthquakeCounterUITests-Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-EarthquakeCounterUITests-Quick-prefix.pch"; path = "../Pods-EarthquakeCounterUITests-Quick/Pods-EarthquakeCounterUITests-Quick-prefix.pch"; sourceTree = "<group>"; };
+		E67DBD61AB13660EC04532C4 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Quick/Filter.swift; sourceTree = "<group>"; };
+		E7CAB05E03968E8C7532153F /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FE66F02E476E5C56B7B777 /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Nimble/FailureMessage.swift; sourceTree = "<group>"; };
+		E8C900B2FAFEF630D7CEBFF5 /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
+		EF771AD4D0858BF900406BC5 /* World+DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "World+DSL.h"; path = "Quick/DSL/World+DSL.h"; sourceTree = "<group>"; };
+		EFFD14B8E2FAA74661910E18 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
+		F0132C4B6AF119C337A86B7D /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
+		F11D464E58F49E627FEC14E5 /* ThrowError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowError.swift; path = Nimble/Matchers/ThrowError.swift; sourceTree = "<group>"; };
+		F2B0209AD9A52D9AF20DBB24 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Quick/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
+		F7E5E7A64DDE55C649ADE098 /* Pods-EarthquakeCounterUITests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EarthquakeCounterUITests-environment.h"; sourceTree = "<group>"; };
+		F8F83274A76141589B95D871 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Quick/DSL/QCKDSL.m; sourceTree = "<group>"; };
+		F9688E2EC616FB54CFC0E7E9 /* Pods-EarthquakeCounterTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EarthquakeCounterTests-environment.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C34090A2B725702311A6A08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5AFC39555ECD2509859BA2 /* Foundation.framework in Frameworks */,
+				8AB7FEB13F67F477BFDFD285 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514115CBA3A8ECC822332CC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B011FDCFA1CF5AD8941BB69A /* Foundation.framework in Frameworks */,
+				CE5E18E16B47E241C36BDDA0 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		691B121A6CDA4F4F5744128C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B74F9F1B402A57B6F9A99023 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72BA0CFC3961D86FF7B3B38E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30053C88A8199AFB85A290A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A623E60170117AAF56FEA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C15622DAF9B27E9D78B562D /* Foundation.framework in Frameworks */,
+				FBEDA920F9663C14140F1454 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7AE82F0409C884C1C0C1967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3C815596E7DFD117395034 /* Foundation.framework in Frameworks */,
+				75151E672AC3FB5542D6BEB4 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FA155AAA9A77B8D1A5E8331 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B42A565378F8BD1F930AFD1F /* Info.plist */,
+				C0F5F6B9985D93D08CBB1D0E /* Info.plist */,
+				88C987905AF7CF4BE31190C7 /* Pods-EarthquakeCounterTests-Quick.modulemap */,
+				1A95327B2C92C6A75239A73D /* Pods-EarthquakeCounterTests-Quick.xcconfig */,
+				49073A2813EA62D5B367CD40 /* Pods-EarthquakeCounterTests-Quick-Private.xcconfig */,
+				BDA1AAB509B4969271C991BD /* Pods-EarthquakeCounterTests-Quick-dummy.m */,
+				6AA8A969A4E3F76C19D044AB /* Pods-EarthquakeCounterTests-Quick-prefix.pch */,
+				C06530043FE0B36188A85D1C /* Pods-EarthquakeCounterTests-Quick-umbrella.h */,
+				0936F43A738C6B6D991BF1EE /* Pods-EarthquakeCounterUITests-Quick.modulemap */,
+				147EDB83EA9AF2E6A57CAB2A /* Pods-EarthquakeCounterUITests-Quick.xcconfig */,
+				77D64AC707F54051373CE779 /* Pods-EarthquakeCounterUITests-Quick-Private.xcconfig */,
+				2311129A3AF9064518D3C861 /* Pods-EarthquakeCounterUITests-Quick-dummy.m */,
+				E42B73A38DF2BE18844CA22E /* Pods-EarthquakeCounterUITests-Quick-prefix.pch */,
+				0DC362E163B8938F17B7F008 /* Pods-EarthquakeCounterUITests-Quick-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-EarthquakeCounterTests-Quick";
+			sourceTree = "<group>";
+		};
+		6509D4463615EACF629F9485 = {
+			isa = PBXGroup;
+			children = (
+				6F25505BA8F15FD387A81B2C /* Podfile */,
+				816F35A5A89AE4AD9A1E8EB9 /* Frameworks */,
+				C84BA11F39CB43AE2E1AD337 /* Pods */,
+				A8FA869D673674250EFACFE0 /* Products */,
+				F294A601B2ECF35353C51942 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		816F35A5A89AE4AD9A1E8EB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B74CF1C09B204E76AC246DA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83D447E82F7E6063C71FC3C0 /* Pods-EarthquakeCounterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9DEAFC0BA789E8ABBF56128C /* Info.plist */,
+				88DDEDD46CFA3B72387E5C88 /* Pods-EarthquakeCounterUITests.modulemap */,
+				194009DBD6F61B4FB620AFE1 /* Pods-EarthquakeCounterUITests-acknowledgements.markdown */,
+				6CA1DF1C714A3EB6D5610A65 /* Pods-EarthquakeCounterUITests-acknowledgements.plist */,
+				518B536817D474CC30DBD093 /* Pods-EarthquakeCounterUITests-dummy.m */,
+				F7E5E7A64DDE55C649ADE098 /* Pods-EarthquakeCounterUITests-environment.h */,
+				7361360D424AAF9491763D1F /* Pods-EarthquakeCounterUITests-frameworks.sh */,
+				5A1ABA5AD1A1DD4F36C3CE0F /* Pods-EarthquakeCounterUITests-resources.sh */,
+				7B9980369C3F0C513166E4B1 /* Pods-EarthquakeCounterUITests-umbrella.h */,
+				0067E6DA1DB4DC45D1424E74 /* Pods-EarthquakeCounterUITests.debug.xcconfig */,
+				300C711AB091B38E4216D52A /* Pods-EarthquakeCounterUITests.release.xcconfig */,
+			);
+			name = "Pods-EarthquakeCounterUITests";
+			path = "Target Support Files/Pods-EarthquakeCounterUITests";
+			sourceTree = "<group>";
+		};
+		8B74CF1C09B204E76AC246DA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CFC15A7011C66A6BD832B7FF /* Foundation.framework */,
+				58AB0B9A270E91477822CBED /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		97787A2B1E589FEB323C35ED /* Quick */ = {
+			isa = PBXGroup;
+			children = (
+				6E27953549D4AB7A93A8242B /* Callsite.swift */,
+				A70128053688E587FC84D144 /* Closures.swift */,
+				A655A142EC5642C5F61FE3A5 /* Configuration.swift */,
+				BF8E136A35AF46F698DBB79B /* DSL.swift */,
+				86F1C4B23B27BB6815BBEF56 /* Example.swift */,
+				A4D7B892F3CDA9CE70ADE9B4 /* ExampleGroup.swift */,
+				6E0841C43BC4191B72EAAC0D /* ExampleHooks.swift */,
+				E8C900B2FAFEF630D7CEBFF5 /* ExampleMetadata.swift */,
+				E67DBD61AB13660EC04532C4 /* Filter.swift */,
+				6F66CD04C681D0D9AC93D061 /* NSString+QCKSelectorName.h */,
+				060F93DF35EC682B97747A3E /* NSString+QCKSelectorName.m */,
+				E26FF3BAA62732FDF39739ED /* QCKDSL.h */,
+				F8F83274A76141589B95D871 /* QCKDSL.m */,
+				3832463884185C1380375665 /* Quick.h */,
+				C1BDCD5EF7A162BE7D915903 /* QuickConfiguration.h */,
+				F2B0209AD9A52D9AF20DBB24 /* QuickConfiguration.m */,
+				A6ADC22E8928D4EF268C81EF /* QuickSpec.h */,
+				7337A9D6F78AEFD89E56967E /* QuickSpec.m */,
+				8B0586850F53E156170249B4 /* SuiteHooks.swift */,
+				9032A3C610C442954F3CB99B /* World.h */,
+				24CDC1EA4DF3E42B8B166FED /* World.swift */,
+				EF771AD4D0858BF900406BC5 /* World+DSL.h */,
+				D369A5BA90116761F0FC1774 /* World+DSL.swift */,
+				4FA155AAA9A77B8D1A5E8331 /* Support Files */,
+			);
+			path = Quick;
+			sourceTree = "<group>";
+		};
+		A8FA869D673674250EFACFE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7CAB05E03968E8C7532153F /* Nimble.framework */,
+				71E51EE311378666C29F552F /* Nimble.framework */,
+				26117D6AB370E3FCF82E6448 /* Pods_EarthquakeCounterTests.framework */,
+				9E3D0C9BF709CC1C6338CC8E /* Pods_EarthquakeCounterUITests.framework */,
+				5F4E31C5566B22CDDC46414E /* Quick.framework */,
+				0B18320633CDE30EFC785194 /* Quick.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B936F481FC1D6A347A210AEB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C320B5CB65C761F571C2C58 /* Info.plist */,
+				B4ADD6CA48B18178B01A5554 /* Info.plist */,
+				B3CF572656CC684CA9AB7F27 /* Pods-EarthquakeCounterTests-Nimble.modulemap */,
+				146A841C7DFECCDDF91EFEF2 /* Pods-EarthquakeCounterTests-Nimble.xcconfig */,
+				8146E52AF743B24737F966BD /* Pods-EarthquakeCounterTests-Nimble-Private.xcconfig */,
+				A70CE9836DB51D5B6FDF2895 /* Pods-EarthquakeCounterTests-Nimble-dummy.m */,
+				2A0A0DF55BE0377867522FAA /* Pods-EarthquakeCounterTests-Nimble-prefix.pch */,
+				37F08B85E65502C3C9B9BDE3 /* Pods-EarthquakeCounterTests-Nimble-umbrella.h */,
+				59EC4E27E5324C676878EC77 /* Pods-EarthquakeCounterUITests-Nimble.modulemap */,
+				A594A4D4D43BA67CA5933CA1 /* Pods-EarthquakeCounterUITests-Nimble.xcconfig */,
+				AD88D49ECB01091EC33A3CBF /* Pods-EarthquakeCounterUITests-Nimble-Private.xcconfig */,
+				DBD570CA6B0371DB55B1FA54 /* Pods-EarthquakeCounterUITests-Nimble-dummy.m */,
+				2A885B545B0920D68087E5BC /* Pods-EarthquakeCounterUITests-Nimble-prefix.pch */,
+				168FFB8BC32CA15FD5CBBEDD /* Pods-EarthquakeCounterUITests-Nimble-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-EarthquakeCounterTests-Nimble";
+			sourceTree = "<group>";
+		};
+		C84BA11F39CB43AE2E1AD337 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE9DDD85DB547E21DF3C4EC0 /* Nimble */,
+				97787A2B1E589FEB323C35ED /* Quick */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DAE93BAC966C60F1EE575776 /* Pods-EarthquakeCounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E14999BDCDCE8BC5BE11F649 /* Info.plist */,
+				AB1592B761DD7011ED49140E /* Pods-EarthquakeCounterTests.modulemap */,
+				81ADB6E67489450190BE24F5 /* Pods-EarthquakeCounterTests-acknowledgements.markdown */,
+				8A542FFF977695F35C380BAE /* Pods-EarthquakeCounterTests-acknowledgements.plist */,
+				4C8EBDF5452C08706D602D26 /* Pods-EarthquakeCounterTests-dummy.m */,
+				F9688E2EC616FB54CFC0E7E9 /* Pods-EarthquakeCounterTests-environment.h */,
+				BCE8F121EFFB069E847E535B /* Pods-EarthquakeCounterTests-frameworks.sh */,
+				E03B39E40C008221AE7A3601 /* Pods-EarthquakeCounterTests-resources.sh */,
+				6CC1A53CE6768DED1FFEE6EF /* Pods-EarthquakeCounterTests-umbrella.h */,
+				6B4681C6E05CA3013F71584A /* Pods-EarthquakeCounterTests.debug.xcconfig */,
+				15E5F2F8303A224B5716A3D8 /* Pods-EarthquakeCounterTests.release.xcconfig */,
+			);
+			name = "Pods-EarthquakeCounterTests";
+			path = "Target Support Files/Pods-EarthquakeCounterTests";
+			sourceTree = "<group>";
+		};
+		F294A601B2ECF35353C51942 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAE93BAC966C60F1EE575776 /* Pods-EarthquakeCounterTests */,
+				83D447E82F7E6063C71FC3C0 /* Pods-EarthquakeCounterUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FE9DDD85DB547E21DF3C4EC0 /* Nimble */ = {
+			isa = PBXGroup;
+			children = (
+				B70F82A77B8AE02FAA3EE535 /* AdapterProtocols.swift */,
+				5E1C3F49E9D2CA93A11A2244 /* AllPass.swift */,
+				391BD96AF9E8BAE9DD5C0769 /* AssertionDispatcher.swift */,
+				56C8721F83D09599FC44EECA /* AssertionRecorder.swift */,
+				8BEE880D89E698810EFB5DAD /* AsyncMatcherWrapper.swift */,
+				93CBBF067933055446961D5B /* BeAKindOf.swift */,
+				2970B5219A1B1AD0EB0BA2DA /* BeAnInstanceOf.swift */,
+				60DB2974D3576E635B7AC03B /* BeCloseTo.swift */,
+				B46DA1CD3B4B9E0B35E666B7 /* BeEmpty.swift */,
+				9D6D94E7CFF4755F7DE28C4D /* BeGreaterThan.swift */,
+				11769D1A68E34AFFE1654EF0 /* BeGreaterThanOrEqualTo.swift */,
+				DDFC06BFA3E5693EB0B0D20C /* BeIdenticalTo.swift */,
+				624CFB43AC966F15726E4140 /* BeLessThan.swift */,
+				A121734A368FEC912BA7E81C /* BeLessThanOrEqual.swift */,
+				1A6A65965B0A58191EECC11B /* BeLogical.swift */,
+				D3F8BA42112EB943B101B77F /* BeNil.swift */,
+				10622E76B8C8662A5B483E73 /* BeginWith.swift */,
+				9F87B4EA14CACB6700FEF4C5 /* Contain.swift */,
+				8FF097BCAB13123335992D25 /* DSL.h */,
+				2DFE75FE861411E4626D0CEC /* DSL.m */,
+				484F75DF2F7B36FAA93D306A /* DSL.swift */,
+				DD3125B48862969BC7D66F48 /* DSL+Wait.swift */,
+				C3FE8148E4A758758EFE6E30 /* EndWith.swift */,
+				C78E75DCAAAB114562F88535 /* Equal.swift */,
+				6A93BF499F28EF0E466CE13C /* Expectation.swift */,
+				AB924D5EB81B0EA6F0ABC373 /* Expression.swift */,
+				E7FE66F02E476E5C56B7B777 /* FailureMessage.swift */,
+				415C253FEF48DA7FEEC46846 /* Functional.swift */,
+				EFFD14B8E2FAA74661910E18 /* Match.swift */,
+				8D51B6B020394891531E8C9D /* MatcherFunc.swift */,
+				0C30B5CF8366F4EF2F852D5B /* MatcherProtocols.swift */,
+				8044B613030928503EC01877 /* NMBExceptionCapture.h */,
+				B2E2EAB298D18BD52B00F5A4 /* NMBExceptionCapture.m */,
+				4CDF6EAAE43C6AD77374D7D7 /* Nimble.h */,
+				961B4DD13F0DA43C2D1194C3 /* NimbleXCTestHandler.swift */,
+				892524473267B3E432244A32 /* ObjCExpectation.swift */,
+				D3B2EF6D263FEF01D4B81B59 /* ObjCMatcher.swift */,
+				3941108E5F3A6CDB4D6E65A4 /* Poll.swift */,
+				4643621AFEC4865E24B74942 /* RaisesException.swift */,
+				F0132C4B6AF119C337A86B7D /* SourceLocation.swift */,
+				55D1D1C7E04DD4DCC622AF04 /* Stringers.swift */,
+				F11D464E58F49E627FEC14E5 /* ThrowError.swift */,
+				B936F481FC1D6A347A210AEB /* Support Files */,
+			);
+			path = Nimble;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20150E0171A32CFD24342A11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D484927B1D35E4B66DBEFB /* Pods-EarthquakeCounterUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A344C5DC87BA82DE7A44BD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5C5C5AC756DCDDCC868B1BA /* Pods-EarthquakeCounterTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC5AA3EA58A6DC7497E3751 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809FE470A119CE871D52DE93 /* DSL.h in Headers */,
+				BE14EE1955944C9764EAA383 /* NMBExceptionCapture.h in Headers */,
+				289DA4CB5441352F8608AF7F /* Nimble.h in Headers */,
+				D05F4F936C9155A7AB1F85E1 /* Pods-EarthquakeCounterUITests-Nimble-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A805301C83AEE5A7167B6A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F60DD44ECF054219ED07977 /* DSL.h in Headers */,
+				6CB1184CB1D18B32321C1DE1 /* NMBExceptionCapture.h in Headers */,
+				3BCC9891B9D446B19B4129BB /* Nimble.h in Headers */,
+				1C62C2A9C68FFC5B9C8EAF04 /* Pods-EarthquakeCounterTests-Nimble-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F24EAEF68514B021D6151A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92BB23A549CA9ADACA2C8A38 /* NSString+QCKSelectorName.h in Headers */,
+				EEE9D751BA826E6782E9EFA3 /* Pods-EarthquakeCounterUITests-Quick-umbrella.h in Headers */,
+				AE9C9D801CEFCC97FFCBB45D /* QCKDSL.h in Headers */,
+				9A548638412522A3210F4EF7 /* Quick.h in Headers */,
+				7D45B6CDF31883B6BDE48028 /* QuickConfiguration.h in Headers */,
+				3F8C847E438E1274628849A4 /* QuickSpec.h in Headers */,
+				A76D0FC4D636D5BA9486C321 /* World+DSL.h in Headers */,
+				5A181DD1BE4461374C1C9AFA /* World.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA75C10D5B7D986FCB54D55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				357C4161244A5B9BC1D5BA7F /* NSString+QCKSelectorName.h in Headers */,
+				52A7EE323C6DC871B02EB3EC /* Pods-EarthquakeCounterTests-Quick-umbrella.h in Headers */,
+				484A3117B608F6B351825792 /* QCKDSL.h in Headers */,
+				CB1D467686CEC8761F2F127F /* Quick.h in Headers */,
+				4101A565C7708D34B526B14D /* QuickConfiguration.h in Headers */,
+				52E3DDB5E9060C3B7866399C /* QuickSpec.h in Headers */,
+				15545C79916E4BCC2AF37F65 /* World+DSL.h in Headers */,
+				BD83F45BF592F46111F05444 /* World.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		08759B75EF47BAA7E2E85675 /* Pods-EarthquakeCounterUITests-Nimble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7FCA0FF923401CFB6519FB7 /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterUITests-Nimble" */;
+			buildPhases = (
+				BBFC9C9F3ADAB213721981A5 /* Sources */,
+				2C34090A2B725702311A6A08 /* Frameworks */,
+				4CC5AA3EA58A6DC7497E3751 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EarthquakeCounterUITests-Nimble";
+			productName = "Pods-EarthquakeCounterUITests-Nimble";
+			productReference = 71E51EE311378666C29F552F /* Nimble.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		12E47239A95D5F68AD7762EB /* Pods-EarthquakeCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5F30D2E2826464A91588CB /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterTests" */;
+			buildPhases = (
+				5AC67607A28E79C7699DE998 /* Sources */,
+				72BA0CFC3961D86FF7B3B38E /* Frameworks */,
+				4A344C5DC87BA82DE7A44BD9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				950977AEA14D8851B22E29FA /* PBXTargetDependency */,
+				854170D9BB31F2AD21EA19C3 /* PBXTargetDependency */,
+			);
+			name = "Pods-EarthquakeCounterTests";
+			productName = "Pods-EarthquakeCounterTests";
+			productReference = 26117D6AB370E3FCF82E6448 /* Pods_EarthquakeCounterTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17C4C8DA4EC0F1E09AC525FE /* Pods-EarthquakeCounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E02DAA846DD8F84C496DB38 /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterUITests" */;
+			buildPhases = (
+				C8DCDE9A3349324412E75607 /* Sources */,
+				691B121A6CDA4F4F5744128C /* Frameworks */,
+				20150E0171A32CFD24342A11 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C723BE02979EAFECA68608D4 /* PBXTargetDependency */,
+				B6F0F86D0582BA2600F93E70 /* PBXTargetDependency */,
+			);
+			name = "Pods-EarthquakeCounterUITests";
+			productName = "Pods-EarthquakeCounterUITests";
+			productReference = 9E3D0C9BF709CC1C6338CC8E /* Pods_EarthquakeCounterUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		67FDD46D8EADA98100887DEA /* Pods-EarthquakeCounterTests-Quick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 464F70D423836946318B2768 /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterTests-Quick" */;
+			buildPhases = (
+				8A767180A617B4AD6DB0FE32 /* Sources */,
+				C0A623E60170117AAF56FEA9 /* Frameworks */,
+				BFA75C10D5B7D986FCB54D55 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EarthquakeCounterTests-Quick";
+			productName = "Pods-EarthquakeCounterTests-Quick";
+			productReference = 5F4E31C5566B22CDDC46414E /* Quick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ADDB4FB067DDA5335E5A56EF /* Pods-EarthquakeCounterTests-Nimble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C24465B6D270F9F7EF33F3 /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterTests-Nimble" */;
+			buildPhases = (
+				EEC78D7CE45C80E70FB70334 /* Sources */,
+				514115CBA3A8ECC822332CC1 /* Frameworks */,
+				71A805301C83AEE5A7167B6A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EarthquakeCounterTests-Nimble";
+			productName = "Pods-EarthquakeCounterTests-Nimble";
+			productReference = E7CAB05E03968E8C7532153F /* Nimble.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E26166DD3E533EDA81D3DAF9 /* Pods-EarthquakeCounterUITests-Quick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502E4E5C6F4A1C4285340D98 /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterUITests-Quick" */;
+			buildPhases = (
+				81B321403AE687BBE1927C7D /* Sources */,
+				F7AE82F0409C884C1C0C1967 /* Frameworks */,
+				A6F24EAEF68514B021D6151A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EarthquakeCounterUITests-Quick";
+			productName = "Pods-EarthquakeCounterUITests-Quick";
+			productReference = 0B18320633CDE30EFC785194 /* Quick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28BE783BC1935A27BA6F8106 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 4B46A75067DDA08A37223AEB /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6509D4463615EACF629F9485;
+			productRefGroup = A8FA869D673674250EFACFE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12E47239A95D5F68AD7762EB /* Pods-EarthquakeCounterTests */,
+				ADDB4FB067DDA5335E5A56EF /* Pods-EarthquakeCounterTests-Nimble */,
+				67FDD46D8EADA98100887DEA /* Pods-EarthquakeCounterTests-Quick */,
+				17C4C8DA4EC0F1E09AC525FE /* Pods-EarthquakeCounterUITests */,
+				08759B75EF47BAA7E2E85675 /* Pods-EarthquakeCounterUITests-Nimble */,
+				E26166DD3E533EDA81D3DAF9 /* Pods-EarthquakeCounterUITests-Quick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AC67607A28E79C7699DE998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				215E42A562875E55292FA8C2 /* Pods-EarthquakeCounterTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81B321403AE687BBE1927C7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A99E68740228FA5B44BD629 /* Callsite.swift in Sources */,
+				D8BEFDE4FA9130C43AA16ACF /* Closures.swift in Sources */,
+				922E9AFD90A569E5CDE37EB3 /* Configuration.swift in Sources */,
+				B2B70D1EA510835A41438B22 /* DSL.swift in Sources */,
+				870DE74B9F8E239E73FA9B53 /* Example.swift in Sources */,
+				F39FED0082986E326BB67EB3 /* ExampleGroup.swift in Sources */,
+				428218193AD3E59F93880F0E /* ExampleHooks.swift in Sources */,
+				2F4F79A496E4E465B6A86FAD /* ExampleMetadata.swift in Sources */,
+				0E051B41DA7696F94496D714 /* Filter.swift in Sources */,
+				4EDE32EBA430A04C8421CB86 /* NSString+QCKSelectorName.m in Sources */,
+				876B8D2E4766CAADEC78E9CE /* Pods-EarthquakeCounterUITests-Quick-dummy.m in Sources */,
+				10E240B758565DA81B1D95E7 /* QCKDSL.m in Sources */,
+				EA653465B7049C552040A63E /* QuickConfiguration.m in Sources */,
+				17DB93E8B6846983C5EB75E8 /* QuickSpec.m in Sources */,
+				EFCC4F8BC462639F05DA03E8 /* SuiteHooks.swift in Sources */,
+				7B8BBCC27889BAE8E41886C9 /* World+DSL.swift in Sources */,
+				B3C95FB91EDA21308BA17342 /* World.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A767180A617B4AD6DB0FE32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347030AD077AC60EC7AB8FD4 /* Callsite.swift in Sources */,
+				9BAB1CBB3E7F9760D6289FBB /* Closures.swift in Sources */,
+				C31F3323ECF78D79F37ABE76 /* Configuration.swift in Sources */,
+				D304219FF6BECF37EFC64E9F /* DSL.swift in Sources */,
+				631D134B76717FAA7E325781 /* Example.swift in Sources */,
+				A2EC3EB98A40DB544FFDDC9D /* ExampleGroup.swift in Sources */,
+				5280824E349170D6EE7D81A2 /* ExampleHooks.swift in Sources */,
+				020F0AE96D556633C8A6E826 /* ExampleMetadata.swift in Sources */,
+				4616E016A533D43D5D16A621 /* Filter.swift in Sources */,
+				E55B0B6177D6E7102F768289 /* NSString+QCKSelectorName.m in Sources */,
+				3F1C19F2D3496C55AB120044 /* Pods-EarthquakeCounterTests-Quick-dummy.m in Sources */,
+				186F9D4B309D0C57E6482366 /* QCKDSL.m in Sources */,
+				CD38C5D6A17640F184EABA5F /* QuickConfiguration.m in Sources */,
+				6E17EA4868F20CBDBF92C67B /* QuickSpec.m in Sources */,
+				2D4FDA47D4BB3151D4EDD084 /* SuiteHooks.swift in Sources */,
+				42D64DDF5E1106FCB048E59C /* World+DSL.swift in Sources */,
+				49E238C1FD0DAE8AD205AD20 /* World.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFC9C9F3ADAB213721981A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7719BC784A4F3237566026 /* AdapterProtocols.swift in Sources */,
+				5865631D9FDDD845B21623F5 /* AllPass.swift in Sources */,
+				3A2BC9BA2ED839B7EE408A17 /* AssertionDispatcher.swift in Sources */,
+				20EC619996E3770EC3C2ADFF /* AssertionRecorder.swift in Sources */,
+				04EB3D2177CB91A9A219DEDD /* AsyncMatcherWrapper.swift in Sources */,
+				EC1BD41D6FE7681AA1334BF2 /* BeAKindOf.swift in Sources */,
+				5A43D9AAEBA8183107233CBD /* BeAnInstanceOf.swift in Sources */,
+				136FB3EF3AA1AF248C0F9972 /* BeCloseTo.swift in Sources */,
+				9A134AFBD027C73A2D63F45B /* BeEmpty.swift in Sources */,
+				B17DE9CB8D7CB4AB24019FC5 /* BeGreaterThan.swift in Sources */,
+				D83C7CF588C71FA491B936C8 /* BeGreaterThanOrEqualTo.swift in Sources */,
+				E6B960B85B57296970E2A152 /* BeIdenticalTo.swift in Sources */,
+				32F00BF6FBD3CF7602F3FD1F /* BeLessThan.swift in Sources */,
+				A860616D68038AAC18910340 /* BeLessThanOrEqual.swift in Sources */,
+				0AB599E8F71566A2D6ED3E75 /* BeLogical.swift in Sources */,
+				009A7DABBD60A45601272E7E /* BeNil.swift in Sources */,
+				26E26D826EB9BBC35886CE12 /* BeginWith.swift in Sources */,
+				96B861D6866FCE4A9E6EC756 /* Contain.swift in Sources */,
+				166E7517E3133CC2BB60CE47 /* DSL+Wait.swift in Sources */,
+				0BC77657DF3E2C6CB4903C8B /* DSL.m in Sources */,
+				199B6900E0A78F5B2B378CDC /* DSL.swift in Sources */,
+				79C57A9C2FD90D171735F7BB /* EndWith.swift in Sources */,
+				15093129AC69D5E2A22AD6D0 /* Equal.swift in Sources */,
+				09E90FFC95B38C66DE263FA9 /* Expectation.swift in Sources */,
+				FD35EA2F40FE47F7C8D49C47 /* Expression.swift in Sources */,
+				6AA4FAA80519E9933F0E484E /* FailureMessage.swift in Sources */,
+				A90ACA3D899E49537BB6773B /* Functional.swift in Sources */,
+				0FF1B258771B99D9BD3AFB9B /* Match.swift in Sources */,
+				86E9860C03AC737AAF6A13A5 /* MatcherFunc.swift in Sources */,
+				4EF1D3AEF5C20F48A022528C /* MatcherProtocols.swift in Sources */,
+				6A7E59C70D7B00C01A3DFD8E /* NMBExceptionCapture.m in Sources */,
+				5C2D9E5CD34FF81A61ECECEF /* NimbleXCTestHandler.swift in Sources */,
+				FD8FC53EAFB15258D2696FAF /* ObjCExpectation.swift in Sources */,
+				B15ADC2D6C70FB7E32E747C2 /* ObjCMatcher.swift in Sources */,
+				79317371F75F27E4E924B3DD /* Pods-EarthquakeCounterUITests-Nimble-dummy.m in Sources */,
+				C92679C644DC02786BBB1B97 /* Poll.swift in Sources */,
+				BDC20B1576AAA3D9EF769DB7 /* RaisesException.swift in Sources */,
+				2CB5E9171008AEBC10E10F82 /* SourceLocation.swift in Sources */,
+				1DD06664F00DA8034D40268E /* Stringers.swift in Sources */,
+				73C79E2D1B269269BB684CF3 /* ThrowError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8DCDE9A3349324412E75607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39109FA7C9674BF507A7050C /* Pods-EarthquakeCounterUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEC78D7CE45C80E70FB70334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09A1648407E2182D2794CC9 /* AdapterProtocols.swift in Sources */,
+				C8EAE3FACA3ABBD5BB6E63F6 /* AllPass.swift in Sources */,
+				646EBC1BB284994C3F70D11F /* AssertionDispatcher.swift in Sources */,
+				7D63D3A4BD60CB1DA7D5C861 /* AssertionRecorder.swift in Sources */,
+				D67874E024B7E7B5CE31E154 /* AsyncMatcherWrapper.swift in Sources */,
+				5E46D8F128F4F5C088183A09 /* BeAKindOf.swift in Sources */,
+				7D05409B5803229061B3183D /* BeAnInstanceOf.swift in Sources */,
+				ACBE646EEE8022C3644184E5 /* BeCloseTo.swift in Sources */,
+				28841300EAC87832CB4F4D9B /* BeEmpty.swift in Sources */,
+				4F655ABC99FAEEE12A43EB59 /* BeGreaterThan.swift in Sources */,
+				2E7CE6AEC6964C2FF4435632 /* BeGreaterThanOrEqualTo.swift in Sources */,
+				9FD6015919D00B9D51D561CB /* BeIdenticalTo.swift in Sources */,
+				4D7BCC3D065E6A0B76C7E8A8 /* BeLessThan.swift in Sources */,
+				810CCCD6BC5545ED7A963B9E /* BeLessThanOrEqual.swift in Sources */,
+				23718DB08AEDCC08A8FB71A0 /* BeLogical.swift in Sources */,
+				C338CC7EC127E303452206E9 /* BeNil.swift in Sources */,
+				E41FCD6944D6FED218FD7A96 /* BeginWith.swift in Sources */,
+				C49812CE26CEE141B7048A23 /* Contain.swift in Sources */,
+				0C149B3482320211CDA57330 /* DSL+Wait.swift in Sources */,
+				EC1CB7215E96091377F676D8 /* DSL.m in Sources */,
+				959BAE8E45DF101C0C1F3F96 /* DSL.swift in Sources */,
+				57EE2F4C1670EACA921BECA2 /* EndWith.swift in Sources */,
+				DBBDA8A9CE12B20565458B06 /* Equal.swift in Sources */,
+				A94355FD237F80A65686018D /* Expectation.swift in Sources */,
+				725404C9B591394DD72E1BDA /* Expression.swift in Sources */,
+				16821297C394DAA46665515E /* FailureMessage.swift in Sources */,
+				BC98BE93A20EB041E30A27C1 /* Functional.swift in Sources */,
+				CD007D116776AEAE4FC3E623 /* Match.swift in Sources */,
+				C0ADDA0530AB93C3802EDFD1 /* MatcherFunc.swift in Sources */,
+				BC668EE782B8E446567B1391 /* MatcherProtocols.swift in Sources */,
+				4199EF919FF209A8FE705232 /* NMBExceptionCapture.m in Sources */,
+				E495B653552DD1E9CA426B8B /* NimbleXCTestHandler.swift in Sources */,
+				AB331A1B9CDCAC4DD07D2B5A /* ObjCExpectation.swift in Sources */,
+				BC7F49A09073DD6EC50225AA /* ObjCMatcher.swift in Sources */,
+				FB3A5395CC48A5955273FCEF /* Pods-EarthquakeCounterTests-Nimble-dummy.m in Sources */,
+				16CC8B5C85294D7CF46D4D82 /* Poll.swift in Sources */,
+				EF4FFE0769D8B90FBDAFB1B3 /* RaisesException.swift in Sources */,
+				94734D1A0EA54738DBD3A974 /* SourceLocation.swift in Sources */,
+				ADC21940BBB8E653F0ABFDF8 /* Stringers.swift in Sources */,
+				41856D9BACC357C67638F5B8 /* ThrowError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		854170D9BB31F2AD21EA19C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EarthquakeCounterTests-Quick";
+			target = 67FDD46D8EADA98100887DEA /* Pods-EarthquakeCounterTests-Quick */;
+			targetProxy = DC4CE4D87C0FE224BBC51AA6 /* PBXContainerItemProxy */;
+		};
+		950977AEA14D8851B22E29FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EarthquakeCounterTests-Nimble";
+			target = ADDB4FB067DDA5335E5A56EF /* Pods-EarthquakeCounterTests-Nimble */;
+			targetProxy = 854572DB12CF9EEB1A0E44D0 /* PBXContainerItemProxy */;
+		};
+		B6F0F86D0582BA2600F93E70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EarthquakeCounterUITests-Quick";
+			target = E26166DD3E533EDA81D3DAF9 /* Pods-EarthquakeCounterUITests-Quick */;
+			targetProxy = C29CF88839E47C88E09024BD /* PBXContainerItemProxy */;
+		};
+		C723BE02979EAFECA68608D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EarthquakeCounterUITests-Nimble";
+			target = 08759B75EF47BAA7E2E85675 /* Pods-EarthquakeCounterUITests-Nimble */;
+			targetProxy = C9ADC04807CA7B4C03EA2926 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B1DB62B04CCE0F497D65CCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 300C711AB091B38E4216D52A /* Pods-EarthquakeCounterUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterUITests/Pods-EarthquakeCounterUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_EarthquakeCounterUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		16C2FC59AF967979EB64839A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D64AC707F54051373CE779 /* Pods-EarthquakeCounterUITests-Quick-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EarthquakeCounterUITests-Quick/Pods-EarthquakeCounterUITests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterUITests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterUITests-Quick/Pods-EarthquakeCounterUITests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		19F97CBA71EBB1C7D1F03C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49073A2813EA62D5B367CD40 /* Pods-EarthquakeCounterTests-Quick-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EarthquakeCounterTests-Quick/Pods-EarthquakeCounterTests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterTests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterTests-Quick/Pods-EarthquakeCounterTests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		200A5485759AE9D8E68ECC4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0067E6DA1DB4DC45D1424E74 /* Pods-EarthquakeCounterUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterUITests/Pods-EarthquakeCounterUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_EarthquakeCounterUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F7CAD7C24284BF3EC98D35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D64AC707F54051373CE779 /* Pods-EarthquakeCounterUITests-Quick-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EarthquakeCounterUITests-Quick/Pods-EarthquakeCounterUITests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterUITests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterUITests-Quick/Pods-EarthquakeCounterUITests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FB13BEA4400FA6296E0FEE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66D8E28FCDE8D8662A9691D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8146E52AF743B24737F966BD /* Pods-EarthquakeCounterTests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EarthquakeCounterTests-Nimble/Pods-EarthquakeCounterTests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterTests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterTests-Nimble/Pods-EarthquakeCounterTests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6FA1046F796313127FE8BCC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		719CDD5950A01F375427A23F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E5F2F8303A224B5716A3D8 /* Pods-EarthquakeCounterTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterTests/Pods-EarthquakeCounterTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_EarthquakeCounterTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B6AECA874C24078829910CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4681C6E05CA3013F71584A /* Pods-EarthquakeCounterTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterTests/Pods-EarthquakeCounterTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_EarthquakeCounterTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A250548D8B038DAE1D603C48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD88D49ECB01091EC33A3CBF /* Pods-EarthquakeCounterUITests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EarthquakeCounterUITests-Nimble/Pods-EarthquakeCounterUITests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterUITests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterUITests-Nimble/Pods-EarthquakeCounterUITests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0F893B8112852D305E59662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49073A2813EA62D5B367CD40 /* Pods-EarthquakeCounterTests-Quick-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EarthquakeCounterTests-Quick/Pods-EarthquakeCounterTests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterTests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterTests-Quick/Pods-EarthquakeCounterTests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CBC0976BD3CB8E9232029C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8146E52AF743B24737F966BD /* Pods-EarthquakeCounterTests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EarthquakeCounterTests-Nimble/Pods-EarthquakeCounterTests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterTests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterTests-Nimble/Pods-EarthquakeCounterTests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2BFCE3A88F7EF341201B803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD88D49ECB01091EC33A3CBF /* Pods-EarthquakeCounterUITests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EarthquakeCounterUITests-Nimble/Pods-EarthquakeCounterUITests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EarthquakeCounterUITests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EarthquakeCounterUITests-Nimble/Pods-EarthquakeCounterUITests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E02DAA846DD8F84C496DB38 /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200A5485759AE9D8E68ECC4B /* Debug */,
+				0B1DB62B04CCE0F497D65CCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		464F70D423836946318B2768 /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterTests-Quick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F97CBA71EBB1C7D1F03C4D /* Debug */,
+				B0F893B8112852D305E59662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B46A75067DDA08A37223AEB /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FA1046F796313127FE8BCC9 /* Debug */,
+				3FB13BEA4400FA6296E0FEE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C5F30D2E2826464A91588CB /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6AECA874C24078829910CC /* Debug */,
+				719CDD5950A01F375427A23F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		502E4E5C6F4A1C4285340D98 /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterUITests-Quick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C2FC59AF967979EB64839A /* Debug */,
+				3F7CAD7C24284BF3EC98D35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C24465B6D270F9F7EF33F3 /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterTests-Nimble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC0976BD3CB8E9232029C61 /* Debug */,
+				66D8E28FCDE8D8662A9691D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7FCA0FF923401CFB6519FB7 /* Build configuration list for PBXNativeTarget "Pods-EarthquakeCounterUITests-Nimble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BFCE3A88F7EF341201B803 /* Debug */,
+				A250548D8B038DAE1D603C48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28BE783BC1935A27BA6F8106 /* Project object */;
+}
