@@ -6,9 +6,9 @@ class FakeEarthquakeService: EarthquakeService {
     var getSanRamonEarthquakes_wasCalled = false
 
     //MARK: EarthquakeService
-    func getSanRamonEarthquakes() -> Promise<Void> {
+    func getSanRamonEarthquakes() -> EarthquakeClusterPromise {
         getSanRamonEarthquakes_wasCalled = true
-        return Promise<Void>.pendingPromise().promise
+        return EarthquakeClusterPromise.pendingPromise().promise
     }
 
     //MARK: Helper methods for fake

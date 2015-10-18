@@ -6,8 +6,7 @@ class FakeHTTPClient: HTTPClient {
     //MARK: Track methods that were called
     var get_wasCalled = false
     var get_wasCalled_withURL: String?
-    var fulfillLastRequest: (NSDictionary -> Void)?
-    var rejectLastRequest: (NSError -> Void)?
+    var lastRequest: (promise: JSONPromise, fulfill: (NSDictionary) -> Void, reject: (ErrorType) -> Void)?
 
 
     //MARK: HTTPClient
@@ -15,10 +14,18 @@ class FakeHTTPClient: HTTPClient {
         get_wasCalled = true
         get_wasCalled_withURL = url
 
-        let deferred = JSONPromise.pendingPromise()
-        fulfillLastRequest = deferred.fulfill
-        rejectLastRequest = { (deferred.reject)($0) }
-        return deferred.promise
+        lastRequest = JSONPromise.pendingPromise()
+        return lastRequest!.promise
+    }
+
+    func fulfillLastRequest(representation: NSDictionary) {
+        lastRequest?.fulfill(representation)
+        NSRunLoop.mainRunLoop().runUntilDate(NSDate())
+    }
+
+    func rejectLastRequest(error: NSError) {
+        lastRequest?.reject(error)
+        NSRunLoop.mainRunLoop().runUntilDate(NSDate())
     }
 
 

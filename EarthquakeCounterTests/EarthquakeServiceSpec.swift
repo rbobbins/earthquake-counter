@@ -16,7 +16,7 @@ class EarthquakeServiceSpec: QuickSpec {
         }
 
         describe("getting a list of San Ramon earthquakes") {
-            var promise: Promise<Void>!
+            var promise: EarthquakeClusterPromise!
 
             beforeEach {
                 promise = subject.getSanRamonEarthquakes()
@@ -35,7 +35,7 @@ class EarthquakeServiceSpec: QuickSpec {
 
             describe("when the request succeeds") {
                 beforeEach {
-                    httpClient.fulfillLastRequest?(["fake": "response"])
+                    httpClient.fulfillLastRequest(["fake": "response"])
                 }
 
                 it("tries to deserialize the response") {
@@ -44,18 +44,41 @@ class EarthquakeServiceSpec: QuickSpec {
                 }
 
                 describe("when deserialization succeeds") {
+                    var deserializedEarthquakeCluster: EarthquakeCluster!
 
+                    beforeEach {
+                        let earthquake = Earthquake(date: NSDate(), magnitude: 1.2, place: "4th and King")
+                        deserializedEarthquakeCluster = EarthquakeCluster([earthquake])
+                        earthquakeClusterDeserializer.succeedAtDeserializing?(deserializedEarthquakeCluster)
+                    }
+
+                    it("fulfills the promise") {
+                        expect(promise.fulfilled).to(beTrue())
+                    }
                 }
 
                 describe("when a deserialization error occurs") {
-                    
+                    var deserializationError: NSError!
+
+                    beforeEach {
+                        deserializationError = NSError(domain: "Fake Error", code: 0, userInfo: nil)
+                        earthquakeClusterDeserializer.failAtDeserializing?(deserializationError)
+                    }
+
+                    it("rejects the promise") {
+                        expect(promise.rejected).to(beTrue())
+                    }
                 }
             }
 
             describe("when the request fails") {
                 beforeEach {
                     let error = NSError(domain: "Fake Error", code: 0, userInfo: nil)
-                    httpClient.rejectLastRequest?(error)
+                    httpClient.rejectLastRequest(error)
+                }
+
+                it("rejects the promise") {
+                    expect(promise.rejected).to(beTrue())
                 }
             }
         }
