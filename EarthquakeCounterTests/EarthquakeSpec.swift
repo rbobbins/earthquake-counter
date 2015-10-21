@@ -23,7 +23,6 @@ class EarthquakeSpec: QuickSpec {
 
                 let other3 = Earthquake(date: subject.date, magnitude: subject.magnitude, place: "NY")
                 expect(subject == other3).to(beFalse())
-
             }
         }
 

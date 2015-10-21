@@ -1,5 +1,5 @@
 import Foundation
-import EarthquakeCounter
+@testable import EarthquakeCounter
 
 class FakeEarthquakeClusterDeserializer: EarthquakeClusterDeserializer {
     var deserialize_wasCalled = false

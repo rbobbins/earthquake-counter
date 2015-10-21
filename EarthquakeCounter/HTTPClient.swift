@@ -3,11 +3,11 @@ import PromiseKit
 
 public typealias JSONPromise = Promise<NSDictionary>
 public protocol HTTPClient {
-    func get(url: String) -> JSONPromise
+    func get(url: String, query: [String: AnyObject]) -> JSONPromise
 }
 
 class RealHTTPClient: HTTPClient {
-    func get(url: String) -> JSONPromise {
-        return NSURLSession.GET(url).asDictionary()
+    func get(url: String, query: [String: AnyObject]) -> JSONPromise {
+        return NSURLSession.GET(url, query: query).asDictionary()
     }
 }

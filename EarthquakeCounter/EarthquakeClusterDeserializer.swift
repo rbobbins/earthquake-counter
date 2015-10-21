@@ -5,7 +5,7 @@ struct EarthquakeDeserializationError: ErrorType {
     var description: String
 }
 
-public protocol EarthquakeClusterDeserializer {
+protocol EarthquakeClusterDeserializer {
     func deserialize(representation: NSDictionary) -> EarthquakeClusterPromise
 }
 

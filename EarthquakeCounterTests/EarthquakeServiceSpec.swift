@@ -25,8 +25,9 @@ class EarthquakeServiceSpec: QuickSpec {
             it("makes a request to the HTTP client") {
                 expect(httpClient.get_wasCalled).to(beTrue())
 
-                let expectedURL = "http://earthquake.usgs.gov/fdsnws/event/1/count?format=geojson&latitude=37.7800&longitude=-121.9871&maxradiuskm=5&starttime=2015-10-01"
-                expect(httpClient.get_wasCalled_withURL).to(equal(expectedURL))
+                let expectedURL = "http://earthquake.usgs.gov/fdsnws/event/1/query"
+                expect(httpClient.get_wasCalled_withArgs?.url).to(equal(expectedURL))
+                expect(httpClient.get_wasCalled_withArgs?.query).notTo(beNil())
             }
 
             it("returns a pending promise") {
@@ -50,6 +51,7 @@ class EarthquakeServiceSpec: QuickSpec {
                         let earthquake = Earthquake(date: NSDate(), magnitude: 1.2, place: "4th and King")
                         deserializedEarthquakeCluster = EarthquakeCluster([earthquake])
                         earthquakeClusterDeserializer.succeedAtDeserializing?(deserializedEarthquakeCluster)
+                        advanceRunLoopSlightly()
                     }
 
                     it("fulfills the promise") {

@@ -5,14 +5,14 @@ import PromiseKit
 class FakeHTTPClient: HTTPClient {
     //MARK: Track methods that were called
     var get_wasCalled = false
-    var get_wasCalled_withURL: String?
+    var get_wasCalled_withArgs: (url: String, query: [String: AnyObject])? = nil
     var lastRequest: (promise: JSONPromise, fulfill: (NSDictionary) -> Void, reject: (ErrorType) -> Void)?
 
 
     //MARK: HTTPClient
-    func get(url: String) -> JSONPromise {
+    func get(url: String, query: [String: AnyObject]) -> JSONPromise {
         get_wasCalled = true
-        get_wasCalled_withURL = url
+        get_wasCalled_withArgs = (url: url, query: query)
 
         lastRequest = JSONPromise.pendingPromise()
         return lastRequest!.promise
@@ -32,6 +32,6 @@ class FakeHTTPClient: HTTPClient {
 
     func reset(stubGetWith: JSONPromise) {
         get_wasCalled = false
-        get_wasCalled_withURL = nil
+        get_wasCalled_withArgs = nil
     }
 }
