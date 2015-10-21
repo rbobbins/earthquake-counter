@@ -1,6 +1,7 @@
 import Foundation
 import PromiseKit
 
+public typealias EarthquakeClusterPromise = Promise<EarthquakeCluster>
 public protocol EarthquakeService {
     func getSanRamonEarthquakes() -> EarthquakeClusterPromise
 }

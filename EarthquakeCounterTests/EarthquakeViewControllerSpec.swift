@@ -23,5 +23,6 @@ class EarthquakeViewControllerSpec: QuickSpec {
         it("should immediately make a request for a list of earthquakes") {
             expect(earthquakeService.getSanRamonEarthquakes_wasCalled).to(beTrue())
         }
+
     }
 }
