@@ -25,9 +25,9 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHw-65-oLM">
-                    <rect key="frame" x="20" y="45" width="103" height="30"/>
-                    <state key="normal" title="Tap for spinner"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHw-65-oLM">
+                    <rect key="frame" x="24" y="45" width="96" height="30"/>
+                    <state key="normal" title="Start spinning"/>
                     <connections>
                         <action selector="didTapSimpleSpinnerButton:" destination="-1" eventType="touchUpInside" id="EZW-Dg-gUr"/>
                     </connections>

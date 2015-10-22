@@ -6,10 +6,19 @@ class WelcomeViewControllerSpec: QuickSpec {
     override func spec() {
         var subject: WelcomeViewController!
         var earthquakeService: FakeEarthquakeService!
+        var dialogPresenter: FakeDialogPresenter!
+        var deferredRequest: (promise: EarthquakeClusterPromise, fulfill: (EarthquakeCluster) -> Void, reject: (ErrorType) -> Void)!
 
         beforeEach {
             earthquakeService = FakeEarthquakeService()
-            subject = WelcomeViewController()
+            deferredRequest = EarthquakeClusterPromise.pendingPromise()
+            earthquakeService.stub_getSanRamonEarthquakes = deferredRequest.promise
+
+            dialogPresenter = FakeDialogPresenter()
+
+            //Inject dependencies into the view controller
+            subject = WelcomeViewController(earthquakeService: earthquakeService,
+                dialogPresenter: dialogPresenter)
 
             //Trigger the view to load and assert that it's not nil
             expect(subject.view).notTo(beNil())
@@ -25,7 +34,7 @@ class WelcomeViewControllerSpec: QuickSpec {
         }
 
         it("has the correct title for the example #1 button") {
-            expect(subject.simpleSpinnerButton.titleLabel?.text).to(equal("Start spinner"))
+            expect(subject.simpleSpinnerButton.titleLabel?.text).to(equal("Start spinning"))
         }
 
         describe("tapping the simple spinner button") {
@@ -38,7 +47,7 @@ class WelcomeViewControllerSpec: QuickSpec {
             }
 
             it("updates the correct title for the example #1 button") {
-                expect(subject.simpleSpinnerButton.titleLabel?.text).to(equal("Stop spinner"))
+                expect(subject.simpleSpinnerButton.titleLabel?.text).to(equal("Stop spinning"))
             }
 
 
@@ -52,7 +61,7 @@ class WelcomeViewControllerSpec: QuickSpec {
                 }
 
                 it("updates the correct title for the example #1 button") {
-                    expect(subject.simpleSpinnerButton.titleLabel?.text).to(equal("Start spinner"))
+                    expect(subject.simpleSpinnerButton.titleLabel?.text).to(equal("Start spinning"))
                 }
             }
         }
@@ -63,6 +72,7 @@ class WelcomeViewControllerSpec: QuickSpec {
             }
 
             it("makes a request for the number of earthquakes in San Ramon") {
+                //Test that the correct message gets sent to the service
                 expect(earthquakeService.getSanRamonEarthquakes_wasCalled).to(beTrue())
             }
 
@@ -71,22 +81,39 @@ class WelcomeViewControllerSpec: QuickSpec {
             }
 
             describe("when the request succeeds") {
-                describe("presenting an alert with the # of earthquakes") {
+                beforeEach {
+                    let earthquakeCluster = EarthquakeCluster([])
+                    deferredRequest.fulfill(earthquakeCluster)
+                    advanceRunLoopSlightly()
+                }
+
+                it("stops the spinner") {
+                    expect(subject.earthquakeSpinner.isAnimating()).to(beFalse())
+                }
+
+                it("presents an alert") {
+                    expect(dialogPresenter.present_wasCalled).to(beTrue())
+                }
+                describe("telling the dialog presenter to present an alert with the # of earthquakes") {
                     it("includes the correct number") {
+                        let expectedTitle = "Earthquakes near San Ramon"
+                        let actualTitle = dialogPresenter.present_wasCalled_withArgs?.title
+                        expect(actualTitle).to(equal(expectedTitle))
 
-                    }
-
-                    it("includes the option to dismiss the alert") {
-
-                    }
-
-                    it("includes the option to search again") {
-
+                        let expectedMessage = "There have been 0 earthquakes near San Ramon since 10/1/2015"
+                        let actualMessage = dialogPresenter.present_wasCalled_withArgs?.message
+                        expect(actualMessage).to(equal(expectedMessage))
                     }
 
                     describe("when the user decides to search again") {
-                        it("makes another request to the network") {
+                        beforeEach {
+                            earthquakeService.getSanRamonEarthquakes_wasCalled = false
 
+                            let tryAgain = dialogPresenter.present_wasCalled_withArgs?.onTryAgain
+                            tryAgain?()
+                        }
+                        it("makes another request to the network") {
+                            expect(earthquakeService.getSanRamonEarthquakes_wasCalled).to(beTrue())
                         }
                     }
                 }
