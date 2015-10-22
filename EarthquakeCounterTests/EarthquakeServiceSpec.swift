@@ -65,6 +65,7 @@ class EarthquakeServiceSpec: QuickSpec {
                     beforeEach {
                         deserializationError = NSError(domain: "Fake Error", code: 0, userInfo: nil)
                         earthquakeClusterDeserializer.failAtDeserializing?(deserializationError)
+                        advanceRunLoopSlightly()
                     }
 
                     it("rejects the promise") {

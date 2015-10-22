@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window = UIWindow()
-        window?.rootViewController = EarthquakeListViewController()
+
+        let navController = UINavigationController(rootViewController: WelcomeViewController())
+        navController.navigationBar.translucent = false
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
         return true
     }

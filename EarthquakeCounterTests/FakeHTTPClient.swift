@@ -20,12 +20,12 @@ class FakeHTTPClient: HTTPClient {
 
     func fulfillLastRequest(representation: NSDictionary) {
         lastRequest?.fulfill(representation)
-        NSRunLoop.mainRunLoop().runUntilDate(NSDate())
+        advanceRunLoopSlightly()
     }
 
     func rejectLastRequest(error: NSError) {
         lastRequest?.reject(error)
-        NSRunLoop.mainRunLoop().runUntilDate(NSDate())
+        advanceRunLoopSlightly()
     }
 
 
