@@ -1,35 +1,35 @@
 PODS:
   - Nimble (2.0.0-rc.3)
-  - OMGHTTPURLRQ (3.0.2):
-    - OMGHTTPURLRQ/RQ (= 3.0.2)
-  - OMGHTTPURLRQ/FormURLEncode (3.0.2)
-  - OMGHTTPURLRQ/RQ (3.0.2):
+  - OMGHTTPURLRQ (3.1.2):
+    - OMGHTTPURLRQ/RQ (= 3.1.2)
+  - OMGHTTPURLRQ/FormURLEncode (3.1.2)
+  - OMGHTTPURLRQ/RQ (3.1.2):
     - OMGHTTPURLRQ/FormURLEncode
     - OMGHTTPURLRQ/UserAgent
-  - OMGHTTPURLRQ/UserAgent (3.0.2)
-  - PromiseKit (3.0.0):
-    - PromiseKit/Foundation (= 3.0.0)
-    - PromiseKit/QuartzCore (= 3.0.0)
-    - PromiseKit/UIKit (= 3.0.0)
-  - PromiseKit/CorePromise (3.0.0)
-  - PromiseKit/Foundation (3.0.0):
-    - OMGHTTPURLRQ (~> 3.0.0)
+  - OMGHTTPURLRQ/UserAgent (3.1.2)
+  - PromiseKit (3.2.0):
+    - PromiseKit/Foundation (= 3.2.0)
+    - PromiseKit/QuartzCore (= 3.2.0)
+    - PromiseKit/UIKit (= 3.2.0)
+  - PromiseKit/CorePromise (3.2.0)
+  - PromiseKit/Foundation (3.2.0):
+    - OMGHTTPURLRQ (~> 3.1.0)
     - PromiseKit/CorePromise
-  - PromiseKit/QuartzCore (3.0.0):
+  - PromiseKit/QuartzCore (3.2.0):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (3.0.0):
+  - PromiseKit/UIKit (3.2.0):
     - PromiseKit/CorePromise
   - Quick (0.6.0)
 
 DEPENDENCIES:
   - Nimble (= 2.0.0-rc.3)
-  - PromiseKit
+  - PromiseKit (= 3.2.0)
   - Quick (~> 0.6.0)
 
 SPEC CHECKSUMS:
   Nimble: 9dff98ee195ffe7351d3b2fb01d3a1420fd97948
-  OMGHTTPURLRQ: 8376dc887d76a5a7e2a67881dc788f917a2f437c
-  PromiseKit: 665540a1eb43156446872dcf49ed7dee6ebbe13b
+  OMGHTTPURLRQ: 38316b56d88125c600bcdb16df8329147da2b0ee
+  PromiseKit: 1db024241265f428137a9f3c00ff9590740c4be6
   Quick: 563686dbcf0ae0f9f7401ac9cd2d786ee1b7f3d7
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.39.0

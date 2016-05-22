@@ -16,7 +16,7 @@ class RealEarthquakeClusterDeserializer: EarthquakeClusterDeserializer {
             guard let features = representation["features"] as? [[String: AnyObject]]
                 else {
                     let error = EarthquakeDeserializationError(description: "JSON response does not contain list of features: \(representation)")
-                    reject(error)
+                    reject(error as NSError)
                     return
             }
 
@@ -24,7 +24,7 @@ class RealEarthquakeClusterDeserializer: EarthquakeClusterDeserializer {
                 let cluster = try features.map { return try self.deserializeEarthquake($0) }
                 fulfill(cluster)
             } catch let error {
-                reject(error)
+                reject(error as NSError)
             }
         }
         return promise
