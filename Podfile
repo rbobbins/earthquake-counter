@@ -1,7 +1,7 @@
 platform :ios, '9.0'
 use_frameworks!
 
-pod 'PromiseKit'
+pod 'PromiseKit', '3.2.0'
 
 target 'EarthquakeCounterTests' do
     pod 'Quick', '~> 0.6.0'
