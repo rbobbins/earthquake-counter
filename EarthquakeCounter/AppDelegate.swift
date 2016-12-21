@@ -14,12 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
 
         let welcomeViewController = WelcomeViewController()
         let navController = UINavigationController(rootViewController: welcomeViewController)
-        navController.navigationBar.translucent = false
+        navController.navigationBar.isTranslucent = false
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
         return true

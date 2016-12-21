@@ -1,13 +1,15 @@
 import Foundation
 import PromiseKit
+import OMGHTTPURLRQ
 
 public typealias JSONPromise = Promise<NSDictionary>
 public protocol HTTPClient {
-    func get(url: String, query: [String: AnyObject]) -> JSONPromise
+    func get(_ url: String, query: [String: AnyObject]) -> JSONPromise
 }
 
 class RealHTTPClient: HTTPClient {
-    func get(url: String, query: [String: AnyObject]) -> JSONPromise {
-        return NSURLSession.GET(url, query: query).asDictionary()
+    func get(_ url: String, query: [String: AnyObject]) -> JSONPromise {
+        let rq = try! OMGHTTPURLRQ.get(url, query)
+        return URLSession.shared.dataTask(with: rq as URLRequest).asDictionary()
     }
 }

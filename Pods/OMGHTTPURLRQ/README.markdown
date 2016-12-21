@@ -1,4 +1,6 @@
-# OMGHTTPURLRQ
+# OMGHTTPURLRQ [![Build Status](https://travis-ci.org/mxcl/OMGHTTPURLRQ.svg?branch=master)](https://travis-ci.org/mxcl/OMGHTTPURLRQ)
+
+[![Join the chat at https://gitter.im/mxcl/OMGHTTPURLRQ](https://badges.gitter.im/mxcl/OMGHTTPURLRQ.svg)](https://gitter.im/mxcl/OMGHTTPURLRQ?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Vital extensions to `NSURLRequest` that Apple left out for some reason.
 
@@ -20,7 +22,6 @@ NSMutableURLRequest *rq = [OMGHTTPURLRQ DELETE:@"http://api.com":@{@"key": @"val
 
 You can then pass these to an `NSURLConnection` or `NSURLSession`.
 
-
 ## `multipart/form-data`
 
 OMG! Constructing multipart/form-data for POST requests is complicated, let us do it for you:
@@ -39,7 +40,7 @@ NSData *data2 = UIImagePNGRepresentation(image2);
 [multipartFormData addFile:data2 parameterName:@"file2" filename:@"myimage2.png" contentType:@"image/png"];
 
 // SUPER Ideally you would not want to re-encode the JPEG as the process
-// is lossy. If you image comes from the AssetLibrary you *CAN* get the
+// is lossy. If your image comes from the AssetLibrary you *CAN* get the
 // original `NSData`. See stackoverflow.com.
 UIImage *image3 = [UIImage imageNamed:@"image3"];
 NSData *data3 = UIImageJPEGRepresentation(image3);
@@ -60,7 +61,7 @@ id config = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentif
 id session = [NSURLSession sessionWithConfiguration:config delegate:someObject delegateQueue:[NSOperationQueue new]];
 
 OMGMultipartFormData *multipartFormData = [OMGMultipartFormData new];
-[multipartFormDatabuilder addFile:data parameterName:@"file" filename:nil contentType:nil];
+[multipartFormData addFile:data parameterName:@"file" filename:nil contentType:nil];
 
 NSURLRequest *rq = [OMGHTTPURLRQ POST:urlString:multipartFormData];
 
@@ -97,7 +98,7 @@ your API keys that registering at https://dev.twitter.com will provide
 you.
 
 ```objc
-NSMutableURLRequest *rq = [TDOAuth URLRequestForPath:@"/oauth/request_token" POSTParameters:@{@"x_auth_mode" : @"reverse_auth"} host:@"api.twitter.com"consumerKey:APIKey consumerSecret:APISecret accessToken:nil tokenSecret:nil];
+NSMutableURLRequest *rq = [TDOAuth URLRequestForPath:@"/oauth/request_token" POSTParameters:@{@"x_auth_mode" : @"reverse_auth"} host:@"api.twitter.com" consumerKey:APIKey consumerSecret:APISecret accessToken:nil tokenSecret:nil];
 [rq addValue:OMGUserAgent() forHTTPHeaderField:@"User-Agent"];
 
 [NSURLConnection sendAsynchronousRequest:rq queue:nil completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {

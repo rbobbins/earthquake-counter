@@ -1,5 +1,5 @@
 import UIKit
 
 func advanceRunLoopSlightly() {
-    NSRunLoop.mainRunLoop().runUntilDate(NSDate().dateByAddingTimeInterval(0.01))
+    RunLoop.main.run(until: Date().addingTimeInterval(0.01))
 }

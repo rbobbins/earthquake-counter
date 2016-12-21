@@ -7,11 +7,11 @@ class WelcomeViewControllerSpec: QuickSpec {
         var subject: WelcomeViewController!
         var earthquakeService: FakeEarthquakeService!
         var dialogPresenter: FakeDialogPresenter!
-        var deferredRequest: (promise: EarthquakeClusterPromise, fulfill: (EarthquakeCluster) -> Void, reject: (ErrorType) -> Void)!
+        var deferredRequest: (promise: EarthquakeClusterPromise, fulfill: (EarthquakeCluster) -> Void, reject: (Error) -> Void)!
 
         beforeEach {
             earthquakeService = FakeEarthquakeService()
-            deferredRequest = EarthquakeClusterPromise.pendingPromise()
+            deferredRequest = EarthquakeClusterPromise.pending()
             earthquakeService.stub_getSanRamonEarthquakes = deferredRequest.promise
 
             dialogPresenter = FakeDialogPresenter()
@@ -29,8 +29,8 @@ class WelcomeViewControllerSpec: QuickSpec {
         }
 
         it("has no moving spinners") {
-            expect(subject.simpleSpinner.isAnimating()).to(beFalse())
-            expect(subject.earthquakeSpinner.isAnimating()).to(beFalse())
+            expect(subject.simpleSpinner.isAnimating).to(beFalse())
+            expect(subject.earthquakeSpinner.isAnimating).to(beFalse())
         }
 
         it("has the correct title for the example #1 button") {
@@ -39,11 +39,11 @@ class WelcomeViewControllerSpec: QuickSpec {
 
         describe("tapping the simple spinner button") {
             beforeEach {
-                subject.simpleSpinnerButton.sendActionsForControlEvents(.TouchUpInside)
+                subject.simpleSpinnerButton.sendActions(for: .touchUpInside)
             }
 
             it("animates the spinner") {
-                expect(subject.simpleSpinner.isAnimating()).to(beTrue())
+                expect(subject.simpleSpinner.isAnimating).to(beTrue())
             }
 
             it("updates the correct title for the example #1 button") {
@@ -53,11 +53,11 @@ class WelcomeViewControllerSpec: QuickSpec {
 
             describe("tapping the button again") {
                 beforeEach {
-                    subject.simpleSpinnerButton.sendActionsForControlEvents(.TouchUpInside)
+                    subject.simpleSpinnerButton.sendActions(for: .touchUpInside)
                 }
 
                 it("stops the spinner") {
-                    expect(subject.simpleSpinner.isAnimating()).to(beFalse())
+                    expect(subject.simpleSpinner.isAnimating).to(beFalse())
                 }
 
                 it("updates the correct title for the example #1 button") {
@@ -68,7 +68,7 @@ class WelcomeViewControllerSpec: QuickSpec {
 
         describe("tapping the earthquake button") {
             beforeEach {
-                subject.earthquakeButton.sendActionsForControlEvents(.TouchUpInside)
+                subject.earthquakeButton.sendActions(for: .touchUpInside)
             }
 
             it("makes a request for the number of earthquakes in San Ramon") {
@@ -77,7 +77,7 @@ class WelcomeViewControllerSpec: QuickSpec {
             }
 
             it("starts a spinner") {
-                expect(subject.earthquakeSpinner.isAnimating()).to(beTrue())
+                expect(subject.earthquakeSpinner.isAnimating).to(beTrue())
             }
 
             describe("when the request succeeds") {
@@ -88,7 +88,7 @@ class WelcomeViewControllerSpec: QuickSpec {
                 }
 
                 it("stops the spinner") {
-                    expect(subject.earthquakeSpinner.isAnimating()).to(beFalse())
+                    expect(subject.earthquakeSpinner.isAnimating).to(beFalse())
                 }
 
                 it("presents an alert") {

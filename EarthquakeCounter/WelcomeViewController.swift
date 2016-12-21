@@ -32,21 +32,21 @@ class WelcomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    @IBAction func didTapSimpleSpinnerButton(sender: AnyObject) {
+    @IBAction func didTapSimpleSpinnerButton(_ sender: AnyObject) {
         toggleSpinner()
     }
 
-    @IBAction func didTapEarthquakeButton(sender: AnyObject) {
+    @IBAction func didTapEarthquakeButton(_ sender: AnyObject) {
         makeRequestForEarthquakes()
     }
 
     //MARK: Private
-    private func makeRequestForEarthquakes() {
+    fileprivate func makeRequestForEarthquakes() {
         earthquakeSpinner.startAnimating()
-        earthquakeService.getSanRamonEarthquakes()
+        _ = earthquakeService.getSanRamonEarthquakes()
             .then { cluster -> Void in
                 self.earthquakeSpinner.stopAnimating()
-                //FUTURE: Move text to a different object. Maybe an EarthquakeClusterViewModel?
+                //TODO: Move text to a different object. Maybe an EarthquakeClusterViewModel?
                 self.dialogPresenter.present("Earthquakes near San Ramon",
                     message: "There have been \(cluster.count) earthquakes near San Ramon since 10/1/2015",
                     onTryAgain: self.makeRequestForEarthquakes,
@@ -54,17 +54,17 @@ class WelcomeViewController: UIViewController {
 
         }
 
-        //FUTURE: Handle the case where network request fails
+        //TODO: Handle the case where network request fails
 
     }
-    private func toggleSpinner() {
-        switch simpleSpinner.isAnimating() {
+    fileprivate func toggleSpinner() {
+        switch simpleSpinner.isAnimating {
         case true:
             simpleSpinner.stopAnimating()
-            simpleSpinnerButton.setTitle("Start spinning", forState: .Normal)
+            simpleSpinnerButton.setTitle("Start spinning", for: UIControlState())
         case false:
             simpleSpinner.startAnimating()
-            simpleSpinnerButton.setTitle("Stop spinning", forState: .Normal)
+            simpleSpinnerButton.setTitle("Stop spinning", for: UIControlState())
         }
     }
 
