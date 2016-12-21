@@ -6,31 +6,31 @@ class FakeHTTPClient: HTTPClient {
     //MARK: Track methods that were called
     var get_wasCalled = false
     var get_wasCalled_withArgs: (url: String, query: [String: AnyObject])? = nil
-    var lastRequest: (promise: JSONPromise, fulfill: (NSDictionary) -> Void, reject: (ErrorType) -> Void)?
+    var lastRequest: (promise: JSONPromise, fulfill: (NSDictionary) -> Void, reject: (Error) -> Void)?
 
 
     //MARK: HTTPClient
-    func get(url: String, query: [String: AnyObject]) -> JSONPromise {
+    func get(_ url: String, query: [String: AnyObject]) -> JSONPromise {
         get_wasCalled = true
         get_wasCalled_withArgs = (url: url, query: query)
 
-        lastRequest = JSONPromise.pendingPromise()
+        lastRequest = JSONPromise.pending()
         return lastRequest!.promise
     }
 
-    func fulfillLastRequest(representation: NSDictionary) {
+    func fulfillLastRequest(_ representation: NSDictionary) {
         lastRequest?.fulfill(representation)
         advanceRunLoopSlightly()
     }
 
-    func rejectLastRequest(error: NSError) {
+    func rejectLastRequest(_ error: NSError) {
         lastRequest?.reject(error)
         advanceRunLoopSlightly()
     }
 
 
 
-    func reset(stubGetWith: JSONPromise) {
+    func reset(_ stubGetWith: JSONPromise) {
         get_wasCalled = false
         get_wasCalled_withArgs = nil
     }

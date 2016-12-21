@@ -11,8 +11,8 @@ import UIKit
 class EarthquakeListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    private let earthquakeService: EarthquakeService
-    private var earthquakeCluster: EarthquakeCluster? = nil
+    fileprivate let earthquakeService: EarthquakeService
+    fileprivate var earthquakeCluster: EarthquakeCluster? = nil
 
     init(earthquakeService: EarthquakeService = RealEarthquakeService()) {
         self.earthquakeService = earthquakeService
@@ -26,9 +26,9 @@ class EarthquakeListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.registerClass(EarthquakeTableViewCell.self, forCellReuseIdentifier: EarthquakeTableViewCell.cellIdentifier)
+        tableView.register(EarthquakeTableViewCell.self, forCellReuseIdentifier: EarthquakeTableViewCell.cellIdentifier)
 
-        earthquakeService.getSanRamonEarthquakes()
+        _ = earthquakeService.getSanRamonEarthquakes()
             .then { earthquakeCluster -> Void in
                 self.earthquakeCluster = earthquakeCluster
                 self.tableView.reloadData()
@@ -37,16 +37,16 @@ class EarthquakeListViewController: UIViewController {
 }
 
 extension EarthquakeListViewController: UITableViewDataSource {
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return self.earthquakeCluster != nil ? 1 : 0
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.earthquakeCluster?.count ?? 0
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(EarthquakeTableViewCell.cellIdentifier)!
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: EarthquakeTableViewCell.cellIdentifier)!
         cell.textLabel?.text = "Earthquake: \(indexPath.row)"
         return cell
     }

@@ -31,7 +31,7 @@ class EarthquakeServiceSpec: QuickSpec {
             }
 
             it("returns a pending promise") {
-                expect(promise.pending).to(beTrue())
+                expect(promise.isPending).to(beTrue())
             }
 
             describe("when the request succeeds") {
@@ -48,14 +48,14 @@ class EarthquakeServiceSpec: QuickSpec {
                     var deserializedEarthquakeCluster: EarthquakeCluster!
 
                     beforeEach {
-                        let earthquake = Earthquake(date: NSDate(), magnitude: 1.2, place: "4th and King")
+                        let earthquake = Earthquake(date: NSDate() as Date, magnitude: 1.2, place: "4th and King")
                         deserializedEarthquakeCluster = EarthquakeCluster([earthquake])
                         earthquakeClusterDeserializer.succeedAtDeserializing?(deserializedEarthquakeCluster)
                         advanceRunLoopSlightly()
                     }
 
                     it("fulfills the promise") {
-                        expect(promise.fulfilled).to(beTrue())
+                        expect(promise.isFulfilled).to(beTrue())
                     }
                 }
 
@@ -69,7 +69,7 @@ class EarthquakeServiceSpec: QuickSpec {
                     }
 
                     it("rejects the promise") {
-                        expect(promise.rejected).to(beTrue())
+                        expect(promise.isRejected).to(beTrue())
                     }
                 }
             }
@@ -81,7 +81,7 @@ class EarthquakeServiceSpec: QuickSpec {
                 }
 
                 it("rejects the promise") {
-                    expect(promise.rejected).to(beTrue())
+                    expect(promise.isRejected).to(beTrue())
                 }
             }
         }

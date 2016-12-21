@@ -4,7 +4,7 @@ class EarthquakeTableViewCell: UITableViewCell {
     static let cellIdentifier = "EarthquakeTableViewCell"
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: .Subtitle, reuseIdentifier: reuseIdentifier)
+        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
     }
 
     required init?(coder aDecoder: NSCoder) {

@@ -7,7 +7,7 @@ class FakeEarthquakeService: EarthquakeService {
     var getSanRamonEarthquakes_wasCalled = false
 
     //MARK: Stub methods
-    var stub_getSanRamonEarthquakes: EarthquakeClusterPromise = EarthquakeClusterPromise.pendingPromise().promise
+    var stub_getSanRamonEarthquakes: EarthquakeClusterPromise = EarthquakeClusterPromise.pending().promise
 
     //MARK: EarthquakeService
     func getSanRamonEarthquakes() -> EarthquakeClusterPromise {
